@@ -1,0 +1,297 @@
+ideas = {
+    country = {
+        # Стартовые идеи
+        CZR_self_proclaimed_empire = {
+            icon = GFX_goal_generic_political_pressure
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                stability_factor = -0.15
+                justify_war_goal_time = 0.2
+                trade_opinion_factor = -0.2
+                acceptance_of_diplomatic_actions = -10
+            }
+        }
+
+        CZR_scarred_nation = {
+            icon = GFX_goal_generic_demand_territory
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = -0.20
+                conscription_factor = -0.30
+            }
+        }
+        CZR_shadow_economy = {
+            icon = GFX_goal_generic_occupy_states
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                consumer_goods_factor = 0.15
+                trade_opinion_factor = -0.25
+                production_speed_buildings_factor = -0.25
+            }
+        }
+
+        CZR_tribal_army_structure = {
+            icon = GFX_goal_generic_allies_build_infantry
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                division_training_time = 0.20
+                org_loss_when_moving = 0.1
+                army_attack_factor = -0.15
+                army_defence_factor = -0.15
+                army_org_factor = -0.10
+            }
+        }
+
+        CZR_fragmented_governance = {
+            icon = GFX_goal_generic_political_reform
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                political_power_gain = -0.3
+                surrender_limit = -0.2
+                compliance_growth = 0.1
+            }
+        }
+
+        # Начальные идеи
+        CZR_fear_of_the_yeti = {
+            picture = GFX_idea_legacy_of_the_storm
+            allowed = { always = yes }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = -0.10
+                stability_factor = -0.05
+                war_support_factor = -0.05
+            }
+            ai_will_do = { factor = 1 }
+        }
+
+        CZR_econ_debuff = {
+            picture = GFX_idea_the_storms_power
+            allowed = { original_tag = CZR }
+            removal_cost = -1
+            modifier = {
+                compliance_growth_on_our_occupied_states = -0.05
+                production_speed_buildings_factor = -0.10    # заменяет construction_speed_factor
+                resistance_target = 0.05
+            }
+        }
+
+        CZR_loyal_tribes = {
+            picture = GFX_CZR_loyalty_tribes
+            allowed = { original_tag = CZR }
+            removal_cost = -1
+            modifier = {
+                conscription_factor = 0.02
+            }
+        }
+        CZR_legion_core_spirit = {
+            allowed = { original_tag = CZR }
+            modifier = {
+                division_training_time = -0.10
+                army_org = 5
+            }
+            removal_cost = -1
+        }
+        CZR_yeti_council_spirit = {
+            picture = GFX_idea_generic_government
+            allowed = { original_tag = CZR }
+            modifier = {
+                political_power_factor = 0.1
+                drift_defence_factor = 0.2
+            }
+            removal_cost = -1
+        }
+        CZR_high_command = {
+            picture = GFX_CZR_headquarters
+            allowed = { original_tag = CZR }
+            modifier = {
+                planning_speed = 0.1
+                land_reinforce_rate = 0.05
+                army_leader_cost_factor = -0.25
+            }
+            removal_cost = -1
+        }
+        CZR_empty_shelves_idea = {
+            picture = GFX_idea_WAT_imported_factory
+            allowed = { always = yes }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.05          # Больше фабрик уходит на товары
+                production_factory_efficiency_gain_factor = -0.15
+            }
+        }
+        # Идеи армии
+
+        # Идеи королевства
+        CZR_army_reorganization = {
+            picture = GFX_idea_army_effort
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                political_power_gain = -0.1
+                training_time_factor = 0.10
+            }
+             on_remove = {
+                country_event = { id = CZR_event.101 }
+            }
+        }
+        CZR_reformed_army_structure = {
+            icon = GFX_goal_generic_army
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                army_attack_factor = 0.05         # чуть больше скоординированности
+                army_defence_factor = 0.05        # немного укрепились
+                army_training_time = 0.10         # всё ещё медленно учим
+            }
+            }
+        
+        # Экономические идеи
+        CZR_shadow_economy2 = {
+            icon = GFX_goal_generic_occupy_states
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                consumer_goods_factor = 0.10
+                trade_opinion_factor = -0.15
+                production_speed_buildings_factor = -0.15
+            }
+        }
+        CZR_shadow_economy3 = {
+            icon = GFX_goal_generic_occupy_states
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                consumer_goods_factor = 0.05
+                trade_opinion_factor = -0.05
+                production_speed_buildings_factor = -0.05
+            }
+        }
+        CZR_planned_economy_start = {
+            icon = GFX_goal_generic_construct_civ_factory
+            allowed = {
+                original_tag = CZR
+            }
+            modifier = {
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.10
+            }
+        }
+        CZR_synthetic_fuel_program = {
+            icon = GFX_goal_generic_fuel
+            modifier = {
+                fuel_gain_factor = 0.2
+                base_fuel_gain_factor = 0.1
+                production_speed_fuel_silo_factor = 0.1
+                production_speed_synthetic_refinery_factor = 0.1
+            }
+        }
+        CZR_precise_mining = {
+            icon = GFX_goal_generic_mining
+            modifier = {
+                local_resources_factor = 0.1
+            }
+        }
+        CZR_management_academy = {
+            icon = GFX_goal_generic_scientific_exchange
+            allowed = {
+                original_tag = CZR
+            }
+            modifier = {
+                production_speed_buildings_factor = 0.05
+                research_speed_factor = 0.03
+            }
+        }
+        CZR_desert_extraction_boost = {
+            icon = GFX_goal_generic_mining
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                local_resources_factor = 0.1
+                research_speed_factor = 0.02
+            }
+        }
+        CZR_gold_and_steel = {
+            icon = GFX_goal_generic_construct_mil_factory
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                production_factory_max_efficiency_factor = 0.1
+                industrial_capacity_factory = 0.1
+                production_speed_buildings_factor = 0.10
+                consumer_goods_factor = -0.1
+            }
+        }
+        CZR_great_caravan_spirit = {
+            picture = GFX_idea_trade
+            allowed = { always = yes }
+            modifier = {
+                monthly_population = 0.15
+                custom_modifier_tooltip = CZR_great_caravan_spirit_tt
+                }
+                removal_cost = -1
+                
+        }
+        CZR_survival_supplies = {
+            picture = GFX_idea_supply
+            allowed = { always = yes }
+            modifier = {
+                supply_consumption_factor = -0.05
+                consumer_goods_factor = -0.02
+            }
+            removal_cost = -1
+        }
+        CZR_from_shovel_to_machine_spirit = {
+            icon = GFX_goal_generic_construct_civ_factory
+            allowed = {
+                original_tag = CZR
+            }
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.05
+                production_factory_max_efficiency_factor = 0.05
+                consumer_goods_factor = -0.03
+            }
+            removal_cost = -1
+        }
+        CZR_office_to_changes_idea = {
+            icon = GFX_goal_generic_scientific_exchange
+            allowed = {
+            original_tag = CZR
+            }
+            modifier = {
+            production_factory_efficiency_gain_factor = 0.05
+            research_speed_factor = 0.03
+            }
+            removal_cost = -1
+        }
+
+        CZR_trade_guilds_union = {
+            icon = GFX_goal_generic_industry
+            allowed = { original_tag = CZR }
+            modifier = {
+                consumer_goods_factor = -0.02
+                factory_output = 0.03
+                stability_factor = 0.02
+            }
+            removal_cost = -1
+        }
+        CZR_association_of_artisans_idea = {
+            icon = GFX_idea_trade_union
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.1
+            }
+        }
+
+    } 
+}

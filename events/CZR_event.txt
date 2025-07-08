@@ -1,0 +1,471 @@
+add_namespace = CZR_event
+add_namespace = CZR_start
+add_namespace = CZR_economy
+add_namespace = CZR_army
+add_namespace = CZR_kingdom
+### Наследие Шторма
+country_event = {
+  id = CZR_start.1
+  title = CZR_start.1.t
+  desc = CZR_start.1.d
+
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.1.a
+    add_stability = -0.05
+    add_ideas = CZR_fear_of_the_yeti
+  }
+}
+
+### Центральная власть
+country_event = {
+  id = CZR_start.2
+  title = CZR_start.2.t
+  desc = CZR_start.2.d
+  picture = GFX_report_event_generic
+
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.2.a
+    # В данном случае действие не требуется
+  }
+}
+
+### Голоса Пустыни
+country_event = {
+  id = CZR_start.3
+  title = CZR_start.3.t
+  desc = CZR_start.3.d
+  picture = GFX_CZR_start_desert_meeting
+
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.3.a  # Выслушать племена
+    add_stability = 0.05
+    add_political_power = -30
+    add_popularity = {
+      ideology = neutrality
+      popularity = 0.05
+    }
+  }
+
+  option = {
+    name = CZR_start.3.b  # Проигнорировать
+    add_stability = -0.05
+    add_political_power = 30
+    add_popularity = {
+      ideology = fascism
+      popularity = 0.05
+    }
+  }
+}
+
+
+country_event = {
+  id = CZR_start.4
+  title = CZR_start.4.t
+  desc = CZR_start.4.d
+  picture = GFX_report_event_generic_meeting
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.4.a  # Поблагодарить племена
+    add_ideas = CZR_loyal_tribes
+  }
+
+  option = {
+    name = CZR_start.4.b  # Потребовать больше
+    add_ideas = CZR_loyal_tribes
+    add_equipment_to_stockpile = {
+      type = infantry_equipment
+      amount = 500
+    }
+    add_stability = -0.02
+  }
+}
+
+
+country_event = {
+  id = CZR_start.5
+  title = CZR_start.5.t
+  desc = CZR_start.5.d
+  picture = GFX_report_event_generic_protest
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.5.a
+    # Пока не определено. Можно добавить нестабильность, поддержку или идею.
+  }
+}
+
+
+country_event = {
+  id = CZR_start.6
+  title = CZR_start.6.t
+  desc = CZR_start.6.d
+  picture = GFX_report_event_council
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.6.a  # Допустить зебр к власти
+    add_stability = 0.05
+    add_popularity = {
+      ideology = neutrality
+      popularity = 0.05
+    }
+  }
+
+  option = {
+    name = CZR_start.6.b  # Не пускать чужаков
+    add_political_power = 50
+    add_popularity = {
+      ideology = fascism
+      popularity = 0.05
+    }
+  }
+}
+
+
+country_event = {
+  id = CZR_start.7
+  title = CZR_start.7.t
+  desc = CZR_start.7.d
+  picture = GFX_report_event_economic_crisis
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.7.a  # Пересмотреть логистику и раздать остатки
+    add_stability = 0.01
+    add_political_power = -15
+  }
+
+  option = {
+    name = CZR_start.7.b  # Назначить виновных среди торговцев
+    add_stability = -0.01
+    add_political_power = 15
+  }
+}
+
+country_event = {
+  id = CZR_start.8
+  title = CZR_start.8.t
+  desc = CZR_start.8.d
+  picture = GFX_report_event_generic_political
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.8.a  # Успокоить народ экстренными поставками
+    add_stability = 0.02
+    add_political_power = -25
+  }
+
+  option = {
+    name = CZR_start.8.b  # Арестовать спекулянтов и запугать рынок
+    add_stability = -0.02
+    add_political_power = 25
+  }
+}
+
+country_event = {
+  id = CZR_start.9
+  title = CZR_start.9.t
+  desc = CZR_start.9.d
+  picture = GFX_report_event_mysterious
+  is_triggered_only = yes
+  hidden = no
+
+  option = {
+    name = CZR_start.9.a
+    add_stability = 0.01
+    add_political_power = -10
+  }
+}
+
+country_event = {
+  id = CZR_start.10
+  title = CZR_start.10.t
+  desc = CZR_start.10.d
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.10.a  # Поддержать Императора
+    set_country_flag = CZR_flag_emperor_path
+  }
+
+  option = {
+    name = CZR_start.10.b  # Поддержать зебр
+    set_country_flag = CZR_flag_zebra_path
+  }
+}
+
+country_event = {
+  id = CZR_start.11
+  title = CZR_start.11.t
+  desc = CZR_start.11.d
+  picture = GFX_report_event_imperial_court
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.11.a  # Остаться с народом
+    set_country_flag = CZR_emperor_kind_path
+  }
+
+  option = {
+    name = CZR_start.11.b  # Железная рука
+    set_country_flag = CZR_emperor_dictator_path
+  }
+}
+
+country_event = {
+  id = CZR_start.12
+  title = CZR_start.12.t
+  desc = CZR_start.102.d
+  picture = GFX_report_event_military_gathering
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_start.12.a  # Гармония
+    set_country_flag = CZR_path_harmony
+  }
+
+  option = {
+    name = CZR_start.12.b  # Пророк
+    set_country_flag = CZR_path_prophet
+  }
+
+  option = {
+    name = CZR_start.12.c  # Орден (Сай Маз’Рах)
+    set_country_flag = CZR_path_order
+  }
+
+  option = {
+    name = CZR_start.12.d  # Коммунизм
+    set_country_flag = CZR_path_communism
+  }
+}
+country_event = {
+  id = CZR_start.202
+  title = CZR_start.202.t
+  desc = CZR_start.202.d
+  is_triggered_only = yes
+  option = { name = CZR_start.202.a }
+}
+
+country_event = {
+  id = CZR_start.203
+  title = CZR_start.203.t
+  desc = CZR_start.203.d
+  is_triggered_only = yes
+  option = { name = CZR_start.203.a }
+}
+
+country_event = {
+  id = CZR_start.204
+  title = CZR_start.204.t
+  desc = CZR_start.204.d
+  is_triggered_only = yes
+  option = { name = CZR_start.204.a }
+}
+
+country_event = {
+  id = CZR_start.205
+  title = CZR_start.205.t
+  desc = CZR_start.205.d
+  is_triggered_only = yes
+  option = { name = CZR_start.205.a }
+}
+
+country_event = {
+  id = CZR_kingdom.20
+  title = CZR_kingdom.20.t
+  desc = CZR_kingdom.20.d
+  picture = GFX_report_event_political
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_kingdom.20.a
+    remove_ideas = CZR_fragmented_governance
+  }
+}
+
+country_event = {
+  id = CZR_kingdom.21
+  title = CZR_kingdom.21.t
+  desc = CZR_kingdom.21.d
+  picture = GFX_event
+  is_triggered_only = yes
+  option = {
+     name = CZR_kingdom.21.a
+        add_stability = 0.05
+        add_political_power = 100
+  }
+}
+
+country_event = {
+  id = CZR_kingdom.22
+  title = CZR_kingdom.22.t
+  desc = CZR_kingdom.22.d
+  picture = GFX_report_event_political_speech
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_kingdom.22.a
+    add_stability = 0.03
+    add_war_support = 0.03
+    add_political_power = 50
+  }
+}
+
+# Monthly random event
+country_event = {
+    id = CZR_event.311
+    is_triggered_only = yes
+    hidden = yes
+    trigger = { has_idea = CZR_great_caravan_spirit }
+    immediate = {
+        random_list = {
+            14 = { country_event = { id = CZR_event.312 } }
+            53 = { country_event = { id = CZR_event.313 } }
+            33 = { country_event = { id = CZR_event.314 } }
+        }
+        # Schedule next month if idea is still present
+        if = {
+            limit = { has_idea = CZR_great_caravan_spirit }
+            country_event = { id = CZR_event.311 days = 40 }
+        }
+    }
+}
+
+# Example random events
+country_event = {
+    id = CZR_event.312
+    title = CZR_event.312.t
+    desc = CZR_event.312.d
+    picture = GFX_report_event_generic_industry
+    is_triggered_only = yes
+    option = {
+        name = CZR_event.312.a
+        add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+        }
+    }
+}
+country_event = {
+    id = CZR_event.313
+    title = CZR_event.313.t
+    desc = CZR_event.313.d
+    picture = GFX_report_event_generic_resources
+    is_triggered_only = yes
+    option = {
+        name = CZR_event.313.a
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 200
+        }
+        add_equipment_to_stockpile = {
+            type = supply_equipment
+            amount = 40
+        }
+        add_manpower = 300
+    }
+}
+country_event = {
+    id = CZR_event.314
+    title = CZR_event.314.t
+    desc = CZR_event.314.d
+    picture = GFX_report_event_generic_workers
+    is_triggered_only = yes
+    option = {
+        name = CZR_event.314.a
+        random_owned_state = {
+          add_manpower = 1500
+        }
+    }
+}
+
+country_event = {
+  id = CZR_event.350
+  immediate = { log = "[GetDateText]: [Root.GetName]: event CZR_event.350" }
+  title = CZR_event.350.t
+  desc = CZR_event.350.d
+  picture = GFX_report_event_education
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_event.350.a
+    add_political_power = 25
+    decrease_illiteracy = yes
+    hidden_effect = {
+      country_event = { id = CZR_event.351 days = 90 }
+    }
+  }
+}
+
+country_event = {
+  id = CZR_event.351
+  immediate = { log = "[GetDateText]: [Root.GetName]: event CZR_event.351" }
+  title = CZR_event.351.t
+  desc = CZR_event.351.d
+  picture = GFX_report_event_education
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_event.351.a
+    add_political_power = 25
+    decrease_illiteracy = yes
+  }
+}
+
+country_event = {
+  id = CZR_event.352
+  immediate = { log = "[GetDateText]: [Root.GetName]: event CZR_event.351" }
+  title = CZR_event.352.t
+  desc = CZR_event.352.d
+  picture = GFX_report_event_education
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_event.352.a
+    add_political_power = 25
+    decrease_illiteracy = yes
+  }
+}
+
+country_event = {
+  id = CZR_event.353
+  immediate = { log = "[GetDateText]: [Root.GetName]: event CZR_event.351" }
+  title = CZR_event.353.t
+  desc = CZR_event.353.d
+  picture = GFX_report_event_education
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_event.353.a
+    add_political_power = 25
+    decrease_illiteracy = yes
+  }
+}
+
+country_event = {
+  id = CZR_event.101
+  is_triggered_only = yes
+  title = CZR_event.101.t
+  desc = CZR_event.101.d
+  picture = GFX_report_event_generic
+
+  immediate = {
+    swap_ideas = {
+      remove_idea = CZR_tribal_army_structure
+      add_idea = CZR_reformed_army_structure
+    }
+  }
+
+  option = {
+    name = CZR_event.101.a
+  }
+}

@@ -1,0 +1,11 @@
+leader_traits = {
+    CZR_moderate_ambition_trait = {
+        random = no
+        sprite = 1
+        visible = { always = yes }
+
+        political_power_gain = 0.1
+        stability_factor = 0.05
+        justify_war_goal_time = -0.10
+    }
+}

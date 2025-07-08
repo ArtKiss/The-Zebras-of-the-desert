@@ -1,0 +1,7 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_CZR_event_emperor_throne"
+    texturefile = "gfx/event_pictures/emperor_throne.tga"
+  }
+
+}

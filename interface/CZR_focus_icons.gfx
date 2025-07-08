@@ -1,0 +1,366 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_CZR_legacy_of_the_storm"
+        texturefile = "gfx/interface/goals/CZR_legacy_storm.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_dunes"
+        texturefile = "gfx/interface/goals/CZR_dunes.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_alokassa"
+        texturefile = "gfx/interface/goals/CZR_alokassa.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_anarchy"
+        texturefile = "gfx/interface/goals/CZR_anarchy.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_break_slavery"
+        texturefile = "gfx/interface/goals/CZR_break_slavery.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_prophecy"
+        texturefile = "gfx/interface/goals/CZR_prophecy.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_rising_sun"
+        texturefile = "gfx/interface/goals/CZR_rising_sun.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_monument"
+        texturefile = "gfx/interface/goals/CZR_monument.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_empty_warehouse"
+        texturefile = "gfx/interface/goals/CZR_empty_warehouse.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_goverment"
+        texturefile = "gfx/interface/goals/CZR_goverment.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_headquarters"
+        texturefile = "gfx/interface/goals/CZR_headquarters.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_legions"
+        texturefile = "gfx/interface/goals/CZR_legions.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_voices"
+        texturefile = "gfx/interface/goals/CZR_voices.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_winds"
+        texturefile = "gfx/interface/goals/CZR_winds.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_yeti_goverment"
+        texturefile = "gfx/interface/goals/CZR_yeti_goverment.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_resistance"
+        texturefile = "gfx/interface/goals/CZR_resistance.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_restart_economy"
+        texturefile = "gfx/interface/goals/CZR_restart_economy.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_loyality"
+        texturefile = "gfx/interface/goals/CZR_loyality.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_market_problems"
+        texturefile = "gfx/interface/goals/CZR_market_problems.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_council"
+        texturefile = "gfx/interface/goals/CZR_council.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_empire_fate"
+        texturefile = "gfx/interface/goals/CZR_empire_fate.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_yeti_economy"
+        texturefile = "gfx/interface/goals/CZR_yeti_economy.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_roads"
+        texturefile = "gfx/interface/goals/CZR_roads.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_rich_of_desert"
+        texturefile = "gfx/interface/goals/CZR_rich_of_desert.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_alokassa_reforms"
+        texturefile = "gfx/interface/goals/CZR_alokassa_reforms.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_pearl_of_desert"
+        texturefile = "gfx/interface/goals/CZR_pearl_of_desert.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_office_to_changes"
+        texturefile = "gfx/interface/goals/CZR_office_to_changes.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_industries"
+        texturefile = "gfx/interface/goals/CZR_industries.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_great_caravan_path"
+        texturefile = "gfx/interface/goals/CZR_great_caravan_path.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_garrison_attack"
+        texturefile = "gfx/interface/goals/CZR_garrison_attack.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_gold_and_steel"
+        texturefile = "gfx/interface/goals/CZR_gold_and_steel.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_from_shovel_to_machine"
+        texturefile = "gfx/interface/goals/CZR_from_shovel_to_machine.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_guild_of_survivalists"
+        texturefile = "gfx/interface/goals/CZR_guild_of_survivalists.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_dusty_neighborhoods"
+        texturefile = "gfx/interface/goals/CZR_dusty_neighborhoods.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_associations"
+        texturefile = "gfx/interface/goals/CZR_associations.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_technology_import"
+        texturefile = "gfx/interface/goals/CZR_technology_import.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_office_to_changes"
+        texturefile = "gfx/interface/goals/CZR_office_to_changes.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_golden_path"
+        texturefile = "gfx/interface/goals/CZR_golden_path.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_valley"
+        texturefile = "gfx/interface/goals/CZR_valley.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_caravan_days"
+        texturefile = "gfx/interface/goals/CZR_caravan_days.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_zebrica_on_rising"
+        texturefile = "gfx/interface/goals/CZR_zebrica_on_rising.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_return_to_the_depth"
+        texturefile = "gfx/interface/goals/CZR_return_to_the_depth.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_oasis_in_desert"
+        texturefile = "gfx/interface/goals/CZR_oasis_in_desert.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_knowledge"
+        texturefile = "gfx/interface/goals/CZR_knowledge.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_food_from_deadlands"
+        texturefile = "gfx/interface/goals/CZR_food_from_deadlands.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_caravan_outposts"
+        texturefile = "gfx/interface/goals/CZR_caravan_outposts.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_tomorrow_belong_us"
+        texturefile = "gfx/interface/goals/CZR_tomorrow_belong_us.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_oil"
+        texturefile = "gfx/interface/goals/CZR_oil.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_oil_2"
+        texturefile = "gfx/interface/goals/CZR_oil_2.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_river_oil_fabric"
+        texturefile = "gfx/interface/goals/CZR_river_oil_fabric.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_synthetic_oil"
+        texturefile = "gfx/interface/goals/CZR_synthetic_oil.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_sandstone_extraction"
+        texturefile = "gfx/interface/goals/CZR_sandstone_extraction.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_deep_driling"
+        texturefile = "gfx/interface/goals/CZR_deep_driling.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_magic_refinery"
+        texturefile = "gfx/interface/goals/CZR_magic_refinery.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_survival_supplies"
+        texturefile = "gfx/interface/goals/CZR_survival_supplies.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_zebra_path"
+        texturefile = "gfx/interface/goals/CZR_zebra_path.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_our_future"
+        texturefile = "gfx/interface/goals/CZR_our_future.dds"
+    }
+     spriteType = {
+        name = "GFX_CZR_scientist"
+        texturefile = "gfx/interface/goals/CZR_scientist.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_oil_expedition"
+        texturefile = "gfx/interface/goals/CZR_oil_expedition.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_order_in_details"
+        texturefile = "gfx/interface/goals/CZR_order_in_details.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_rulling_academy"
+        texturefile = "gfx/interface/goals/CZR_rulling_academy.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_army_problems"
+        texturefile = "gfx/interface/goals/CZR_army_problems.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_balance_of_sand"
+        texturefile = "gfx/interface/goals/CZR_balance_of_sand.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_consult_the_elders"
+        texturefile = "gfx/interface/goals/CZR_consult_the_elders.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_discuss_the_future"
+        texturefile = "gfx/interface/goals/CZR_discuss_the_future.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_dedication"
+        texturefile = "gfx/interface/goals/CZR_dedication.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_face_to_face"
+        texturefile = "gfx/interface/goals/CZR_face_to_face.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_first_royal_tour"
+        texturefile = "gfx/interface/goals/CZR_first_royal_tour.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_from_inner_to_outer"
+        texturefile = "gfx/interface/goals/CZR_from_inner_to_outer.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_legend_in_the_palace"
+        texturefile = "gfx/interface/goals/CZR_legend_in_the_palace.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_lets_welcome_the_king"
+        texturefile = "gfx/interface/goals/CZR_lets_welcome_the_king.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_meeting_with_eneia"
+        texturefile = "gfx/interface/goals/CZR_meeting_with_eneia.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_meeting_the_prophet"
+        texturefile = "gfx/interface/goals/CZR_meeting_the_prophet.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_message_to_the_inner_circle"
+        texturefile = "gfx/interface/goals/CZR_message_to_the_inner_circle.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_moderate_ambitions"
+        texturefile = "gfx/interface/goals/CZR_moderate_ambitions.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_negotiations_with_elders_from_west"
+        texturefile = "gfx/interface/goals/CZR_negotiations_with_elders_from_west.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_new_king_shadow"
+        texturefile = "gfx/interface/goals/CZR_new_king_shadow.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_official_meeting"
+        texturefile = "gfx/interface/goals/CZR_official_meeting.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_reconcil_yeti_and_zebra"
+        texturefile = "gfx/interface/goals/CZR_reconcil_yeti_and_zebra.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_return_of_imkari"
+        texturefile = "gfx/interface/goals/CZR_return_of_imkari.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_rumors_in_the_north"
+        texturefile = "gfx/interface/goals/CZR_rumors_in_the_north.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_secrets_of_the_desert"
+        texturefile = "gfx/interface/goals/CZR_secrets_of_the_desert.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_secure_the_borders"
+        texturefile = "gfx/interface/goals/CZR_secure_the_borders.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_solemn_coronation"
+        texturefile = "gfx/interface/goals/CZR_solemn_coronation.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_speak_to_the_zebras"
+        texturefile = "gfx/interface/goals/CZR_speak_to_the_zebras.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_the_old_and_the_new"
+        texturefile = "gfx/interface/goals/CZR_the_old_and_the_new.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_unity_in_diversity"
+        texturefile = "gfx/interface/goals/CZR_unity_in_diversity.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_claim_the_legacy"
+        texturefile = "gfx/interface/goals/CZR_claim_the_legacy.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_watch_the_wind"
+        texturefile = "gfx/interface/goals/CZR_watch_the_wind.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_whispers_of_the_order"
+        texturefile = "gfx/interface/goals/CZR_whispers_of_the_order.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_word_in_the_dunes"
+        texturefile = "gfx/interface/goals/CZR_word_in_the_dunes.dds"
+    }
+}

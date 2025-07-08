@@ -1,0 +1,10 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_CZE_loyalty_tribes"
+    texturefile = "gfx/interface/ideas/generic_manpower_bonus.dds"
+  }
+  spriteType = {
+    name = "GFX_CZE_idea_headquarters"
+    texturefile = "gfx/interface/ideas/GRI/AF23/GRI_commissars.tga"
+  }
+}
