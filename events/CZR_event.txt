@@ -319,7 +319,6 @@ country_event = {
   }
 }
 
-# Monthly random event
 country_event = {
     id = CZR_event.311
     is_triggered_only = yes
@@ -339,7 +338,6 @@ country_event = {
     }
 }
 
-# Example random events
 country_event = {
     id = CZR_event.312
     title = CZR_event.312.t
@@ -467,5 +465,62 @@ country_event = {
 
   option = {
     name = CZR_event.101.a
+  }
+}
+
+country_event = {
+  id = CZR_event.102
+  is_triggered_only = yes
+  title = CZR_event.102.t
+  desc = CZR_event.102.d
+  picture = GFX_report_event_generic
+
+  trigger = { always = yes }
+
+  option = {
+    name = CZR_event.102.a
+    add_timed_idea = {
+      idea = CZR_caravan_festival_major
+      days = 30
+    }
+    hidden_effect = {
+      if = {
+        limit = { has_idea = CZR_caravan_days_idea }
+        country_event = {
+          id = CZR_event.103
+          days = 365
+        }
+      }
+    }
+  }
+}
+
+country_event = {
+  id = CZR_event.103
+  is_triggered_only = yes
+  title = CZR_event.103.t
+  desc = CZR_event.103.d
+  picture = GFX_report_event_generic
+
+  trigger = {
+    has_idea = CZR_caravan_days_idea
+  }
+
+  option = {
+    name = CZR_event.103.a
+    add_timed_idea = {
+      idea = CZR_caravan_festival_minor
+      days = 30
+    }
+    # Запуск цикла слабых эффектов через год
+    hidden_effect = {
+      if = {
+        limit = { has_idea = CZR_caravan_days_idea }
+        country_event = {
+          id = CZR_event.103
+          days = 365
+        }
+      }
+    }
   }
 }

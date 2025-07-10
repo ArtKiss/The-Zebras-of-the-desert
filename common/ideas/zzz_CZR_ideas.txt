@@ -292,6 +292,70 @@ ideas = {
                 production_factory_efficiency_gain_factor = 0.1
             }
         }
+        CZR_caravan_links_idea = {
+            icon = GFX_goal_generic_construct_civilian
+            allowed = {
+                original_tag = CZR
+            }
+            modifier = {
+                production_speed_rail_way_factor = 0.15
+                production_speed_supply_node_factor = 0.1
+                out_of_supply_factor = -0.1
+            }
+            removal_cost = -1
+        }
+        CZR_zebrica_on_rising_idea = {
+            icon = GFX_goal_generic_construct_civ_factory
+            allowed = {
+                original_tag = CZR
+            }
+            modifier = {
+                production_factory_max_efficiency_factor = 0.15
+                industrial_capacity_factory = 0.15
+                production_speed_buildings_factor = 0.15
+                consumer_goods_factor = -0.05
+            }
+            removal_cost = -1
+        }
+
+        CZR_caravan_days_idea = {
+            icon = GFX_goal_generic_propaganda
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                trade_opinion_factor = 0.1
+                custom_modifier_tooltip = CZR_caravan_days_idea_tt
+            }
+            removal_cost = -1
+        }
+
+        CZR_caravan_festival_major = {
+            icon = GFX_goal_support_democracy
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                stability_weekly_factor = 0.002
+                monthly_population = 0.25
+                production_speed_buildings_factor = 0.1
+                trade_opinion_factor = 0.1
+            }
+
+            removal_cost = -1
+        }
+
+        CZR_caravan_festival_minor = {
+            icon = GFX_goal_support_neutrality
+            allowed = { original_tag = CZR }
+
+            modifier = {
+                stability_weekly_factor = 0.001
+                monthly_population = 0.15
+                production_speed_buildings_factor = 0.05
+                trade_opinion_factor = 0.05
+            }
+
+            removal_cost = -1
+        }
 
     } 
 }

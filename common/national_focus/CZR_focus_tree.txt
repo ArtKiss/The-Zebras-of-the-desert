@@ -382,14 +382,15 @@ focus = {
   prerequisite = { focus = CZR_discuss_the_future }
   relative_position_id = CZR_consult_the_elders
   completion_reward = {
-  set_politics = {
-    ruling_party = neutrality
-  }
 
   set_party_name = {
     ideology = neutrality
     name = CZR_neutrality_new_party
     long_name = CZR_neutrality_new_party_long
+  }
+
+  set_politics = {
+    ruling_party = neutrality
   }
 
   set_party_name = {
@@ -424,6 +425,11 @@ focus = {
       expire = "1965.1.1.1"
       traits = { CZR_moderate_ambition_trait }
     }
+  }
+
+  set_character_name = {
+    character = CZR_emperor_alokassa_i
+    name = CZR_emperor_alokassa_i_CZR_KINGDOM
   }
 
   add_country_leader_role = {
@@ -1373,6 +1379,7 @@ focus = {
         level = 1
       }
     }
+    add_political_power = 25
   }
 } 
 
@@ -1392,6 +1399,7 @@ focus = {
       category = excavation_tech
     }
     add_ideas = CZR_desert_extraction_boost
+    add_political_power = 25
   }
 }
 
@@ -1405,10 +1413,35 @@ focus = {
   cost = 5
 
   completion_reward = {
-    swap_ideas = { 
-				remove_idea = agrarian_society 
-				add_idea = pre_industrial_society 
-			}
+    if = {
+      limit = { has_idea = agrarian_society }
+      swap_ideas = {
+        remove_idea = agrarian_society
+        add_idea = pre_industrial_society
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society }
+        swap_ideas = {
+          remove_idea = pre_industrial_society
+          add_idea = pre_industrial_society2
+        }
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society2 }
+        swap_ideas = {
+          remove_idea = pre_industrial_society2
+          add_idea = outdated_industry
+        }
+      }
+      else_if = {
+        limit = { has_idea = outdated_industry }
+        swap_ideas = {
+          remove_idea = outdated_industry
+          add_idea = modern_society
+        }
+      }
+    }
+
     swap_ideas = { 
       remove_idea = CZR_shadow_economy
       add_idea = CZR_shadow_economy2 
@@ -1565,23 +1598,44 @@ focus = {
   cost = 5
   completion_reward = {
     if = {
-				limit = {
-					has_idea = pre_industrial_society 
-				}
-				swap_ideas = { 
-					remove_idea = pre_industrial_society
-					add_idea = pre_industrial_society2 
-				}
-				else = {
-					swap_ideas = { 
-						remove_idea = pre_industrial_society2
-						add_idea = outdated_industry
-					}
-				}
-			}
+      limit = { has_idea = agrarian_society }
+      swap_ideas = {
+        remove_idea = agrarian_society
+        add_idea = pre_industrial_society
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society }
+        swap_ideas = {
+          remove_idea = pre_industrial_society
+          add_idea = pre_industrial_society2
+        }
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society2 }
+        swap_ideas = {
+          remove_idea = pre_industrial_society2
+          add_idea = outdated_industry
+        }
+      }
+      else_if = {
+        limit = { has_idea = outdated_industry }
+        swap_ideas = {
+          remove_idea = outdated_industry
+          add_idea = modern_society
+        }
+      }
+    }
     swap_ideas = { 
       remove_idea = CZR_shadow_economy2
       add_idea = CZR_shadow_economy3 
+    }
+    898 = {
+      add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+      }
+      add_extra_state_shared_building_slots = 1
     }
   }
 }
@@ -1630,14 +1684,13 @@ focus = {
     add_stability = 0.03
     add_political_power = 25
     add_ideas = CZR_trade_guilds_union
-    add_tech_bonus = {
-      bonus = 1.0
-      uses = 1
-      category = trade_tech
+    swap_ideas = { 
+      remove_idea = CZR_shadow_economy
+      add_idea = CZR_shadow_economy2 
     }
     899 = {
       add_building_construction = {
-        type = industrial_complex
+        type = infrastructure
         level = 1
         instant_build = yes
       }
@@ -1667,12 +1720,7 @@ focus = {
     899 = {
       add_building_construction = {
         type = industrial_complex
-        level = 1
-        instant_build = yes
-      }
-      add_building_construction = {
-        type = industrial_complex
-        level = 1
+        level = 2
         instant_build = yes
       }
       add_extra_state_shared_building_slots = 2
@@ -1699,6 +1747,11 @@ focus = {
         level = 1
         instant_build = yes
       }
+      add_building_construction = {
+        type = arms_factory
+        level = 1
+        instant_build = yes
+      }
     }
   }
 }
@@ -1713,6 +1766,34 @@ focus = {
   cost = 10
 
   completion_reward = {
+        if = {
+      limit = { has_idea = agrarian_society }
+      swap_ideas = {
+        remove_idea = agrarian_society
+        add_idea = pre_industrial_society
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society }
+        swap_ideas = {
+          remove_idea = pre_industrial_society
+          add_idea = pre_industrial_society2
+        }
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society2 }
+        swap_ideas = {
+          remove_idea = pre_industrial_society2
+          add_idea = outdated_industry
+        }
+      }
+      else_if = {
+        limit = { has_idea = outdated_industry }
+        swap_ideas = {
+          remove_idea = outdated_industry
+          add_idea = modern_society
+        }
+      }
+    }
     add_tech_bonus = {
       bonus = 1.0
       uses = 1
@@ -1789,9 +1870,23 @@ focus = {
     add_stability = 0.03
     add_political_power = 50
     add_ideas = CZR_golden_path_idea
-    904 = {
+    898 = {
       add_building_construction = {
-        type = civilian_factory
+        type = infrastructure
+        level = 1
+        instant_build = yes
+      }
+    }
+    899 = {
+      add_building_construction = {
+        type = infrastructure
+        level = 1
+        instant_build = yes
+      }
+    }
+    905 = {
+      add_building_construction = {
+        type = infrastructure
         level = 1
         instant_build = yes
       }
@@ -1809,20 +1904,53 @@ focus = {
 
   completion_reward = {
     if = {
-				limit = {
-					has_idea = pre_industrial_society 
-				}
-				swap_ideas = { 
-					remove_idea = pre_industrial_society
-					add_idea = pre_industrial_society2 
-				}
-				else = {
-					swap_ideas = { 
-						remove_idea = pre_industrial_society2
-						add_idea = outdated_industry
-					}
-				}
-			}
+      limit = { has_idea = agrarian_society }
+      swap_ideas = {
+        remove_idea = agrarian_society
+        add_idea = pre_industrial_society
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society }
+        swap_ideas = {
+          remove_idea = pre_industrial_society
+          add_idea = pre_industrial_society2
+        }
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society2 }
+        swap_ideas = {
+          remove_idea = pre_industrial_society2
+          add_idea = outdated_industry
+        }
+      }
+      else_if = {
+        limit = { has_idea = outdated_industry }
+        swap_ideas = {
+          remove_idea = outdated_industry
+          add_idea = modern_society
+        }
+      }
+    }
+    swap_ideas = { 
+      remove_idea = CZR_shadow_economy2
+      add_idea = CZR_shadow_economy3 
+    }
+    901 = {
+      add_building_construction = {
+        type = arms_factory
+        level = 1
+        instant_build = yes
+      }
+      add_extra_state_shared_building_slots = 1
+    }
+    904 = {
+      add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+      }
+      add_extra_state_shared_building_slots = 1
+    }
   }
 }
 focus = {
@@ -1839,13 +1967,7 @@ focus = {
     add_stability = 0.02
     add_political_power = 25
     add_ideas = CZR_caravan_days_idea
-    905 = {
-      add_building_construction = {
-        type = infrastructure
-        level = 1
-        instant_build = yes
-      }
-    }
+    country_event = { id = CZR_event.102 }
   }
 }
 
@@ -1861,7 +1983,7 @@ focus = {
   completion_reward = {
     add_stability = 0.05
     add_political_power = 50
-    add_research_slot = 1
+    remove_ideas = CZR_shadow_economy3
     add_ideas = CZR_zebrica_on_rising_idea
   }
 }
@@ -1891,6 +2013,14 @@ focus = {
       amount = 4
     }
     }
+    899 = {
+      add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+      }
+      add_extra_state_shared_building_slots = 1
+    }
   }
 }
 focus = {
@@ -1904,12 +2034,12 @@ focus = {
 
   completion_reward = {
     add_stability = 0.03
-    add_manpower = 2000
-    add_equipment_to_stockpile = {
-      type = infantry_equipment
-      amount = 500
-    }
     add_ideas = CZR_survival_supplies
+
+    swap_ideas = {
+      remove_idea = poverty2
+      add_idea = poverty3
+    }
   }
 }
 focus = {
@@ -1927,20 +2057,37 @@ focus = {
 	}
   completion_reward = {
     if = {
-				limit = {
-					has_idea = pre_industrial_society 
-				}
-				swap_ideas = { 
-					remove_idea = pre_industrial_society
-					add_idea = pre_industrial_society2 
-				}
-				else = {
-					swap_ideas = { 
-						remove_idea = pre_industrial_society2
-						add_idea = outdated_industry
-					}
-				}
-			}
+      limit = { has_idea = agrarian_society }
+      swap_ideas = {
+        remove_idea = agrarian_society
+        add_idea = pre_industrial_society
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society }
+        swap_ideas = {
+          remove_idea = pre_industrial_society
+          add_idea = pre_industrial_society2
+        }
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society2 }
+        swap_ideas = {
+          remove_idea = pre_industrial_society2
+          add_idea = outdated_industry
+        }
+      }
+      else_if = {
+        limit = { has_idea = outdated_industry }
+        swap_ideas = {
+          remove_idea = outdated_industry
+          add_idea = modern_society
+        }
+      }
+    }
+    swap_ideas = {
+      remove_idea = poverty3
+      add_idea = poverty4
+    }
     898 = {
       add_building_construction = {
         type = infrastructure
@@ -2049,7 +2196,24 @@ focus = {
   cost = 5
 
   completion_reward = {
-    # TO DO
+    swap_ideas = {
+      remove_idea = poverty4
+      add_idea = poverty5
+    }
+    remove_ideas = CZR_empty_shelves_idea
+    898 = {
+      add_building_construction = {
+        type = infrastructure
+        level = 1
+      }
+    }
+    905 = {
+      add_building_construction = {
+        type = infrastructure
+        level = 1
+      }
+    }
+    add_stability = 0.05
   }
 }
 focus = {
@@ -2062,7 +2226,56 @@ focus = {
   cost = 5
 
   completion_reward = {
-    # TO DO
+    swap_ideas = {
+      remove_idea = poverty5
+      add_idea = no_poverty
+    }
+    901 = { # Raven Lakes
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					id = 19605
+          id = 19698
+			  }
+      }
+    }
+		904 = { # Pineshade
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					id = 19641
+				}
+			}
+		}
+    900 = { # Pineshade
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					id = 19692
+          id = 19725
+				}
+			}
+		}
+    899 = { # Pineshade
+			add_building_construction = {
+				type = bunker
+				level = 1
+				instant_build = yes
+				province = {
+					id = 19689
+          id = 20109
+          id = 19745
+          id = 19754
+				}
+			}
+		}
+    add_ideas = CZR_caravan_links_idea
   }
 }
 focus = {
@@ -2076,11 +2289,35 @@ focus = {
   cost = 5
 
   completion_reward = {
-    swap_ideas = { 
-				remove_idea = outdated_industry
-				add_idea = modern_society
-			}
-}
+    if = {
+      limit = { has_idea = agrarian_society }
+      swap_ideas = {
+        remove_idea = agrarian_society
+        add_idea = pre_industrial_society
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society }
+        swap_ideas = {
+          remove_idea = pre_industrial_society
+          add_idea = pre_industrial_society2
+        }
+      }
+      else_if = {
+        limit = { has_idea = pre_industrial_society2 }
+        swap_ideas = {
+          remove_idea = pre_industrial_society2
+          add_idea = outdated_industry
+        }
+      }
+      else_if = {
+        limit = { has_idea = outdated_industry }
+        swap_ideas = {
+          remove_idea = outdated_industry
+          add_idea = modern_society
+        }
+      }
+    }
+  }
 }
 focus = {
   id = CZR_surveys_southwest
@@ -2303,9 +2540,6 @@ focus = {
   x = -6
   y = 1
   cost = 5
-  available = {
-    has_country_flag = CZR_choosen_modern_methods
-  }
   prerequisite = { focus = CZR_lessons_of_the_past } 
   relative_position_id = CZR_lessons_of_the_past
   mutually_exclusive = { focus = CZR_traditional_approach}
@@ -2313,7 +2547,7 @@ focus = {
 # Mobile Warfare
 focus = {
   id = CZR_mobile_focus
-  icon = GFX_goal_generic_tank_assault
+  icon = GFX_goal_planning_bonus
   x = -2
   y = 1
   cost = 5
@@ -2327,7 +2561,7 @@ focus = {
 }
 focus = {
   id = CZR_motorization
-  icon = GFX_goal_generic_motorized
+  icon = GFX_goal_generic_cavalry
   x = -1
   y = 1
   cost = 5
@@ -2339,18 +2573,18 @@ focus = {
 focus = {
   id = CZR_mechanized_offense
   icon = GFX_focus_generic_mechanized
-  x = 1
+  x = 0
   y = 1
   cost = 5
-  prerequisite = { focus = CZR_mobile_focus }
-  relative_position_id = CZR_mobile_focus
+  prerequisite = { focus = CZR_mobile_logistics }
+  relative_position_id = CZR_mobile_logistics
   completion_reward = {
   
   }
 }
   focus = {
   id = CZR_light_tank_tactics
-  icon = GFX_goal_generic_tankette
+  icon = GFX_goal_generic_army_tanks
   x = 0
   y = 1
   cost = 5
@@ -2361,12 +2595,12 @@ focus = {
 }
 focus = {
   id = CZR_mobile_logistics
-  icon = GFX_goal_generic_stockpile_fuel
+  icon = GFX_focus_generic_truck
   x = 0
   y = 1
   cost = 5
-  prerequisite = { focus = CZR_mechanized_offense }
-  relative_position_id = CZR_mechanized_offense
+  prerequisite = { focus = CZR_breakthrough_theory }
+  relative_position_id = CZR_breakthrough_theory
   completion_reward = {
     modifier = {
       army_speed_factor = 0.05
@@ -2376,19 +2610,19 @@ focus = {
 }
 focus = {
   id = CZR_breakthrough_theory
-  icon = GFX_goal_indy_swing_the_sword
-  x = 0
+  icon = GFX_focus_indy_swing_the_sword
+  x = 1
   y = 1
   cost = 5
-  prerequisite = { focus = CZR_mobile_logistics }
-  relative_position_id = CZR_mobile_logistics
+  prerequisite = { focus = CZR_mobile_focus }
+  relative_position_id = CZR_mobile_focus
   completion_reward = {
     
   }
 }
 focus = {
   id = CZR_shock_army
-  icon = GFX_focus_indy_tanks_across_the_bord
+  icon = GFX_goal_offensive_army
   x = 0
   y = 1
   cost = 5
@@ -2399,17 +2633,18 @@ focus = {
 }
 focus = {
   id = CZR_spearhead
-  icon = GFX_goal_generic_tank_division
+  icon = GFX_goal_Zebra_Spears
   x = 0
   y = 4
   cost = 5
   prerequisite = { 
     focus = CZR_shock_army 
-    focus = CZR_breakthrough_theory
+    focus = CZR_mechanized_offense
   }
   relative_position_id = CZR_mobile_focus
 
   completion_reward = {
+
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2418,7 +2653,7 @@ focus = {
 # Superior Firepower
 focus = {
   id = CZR_firepower_focus
-  icon = GFX_goal_generic_army_artillery
+  icon = GFX_goal_national_artillery
   x = 2
   y = 1
   cost = 5
@@ -2432,7 +2667,7 @@ focus = {
 }
 focus = {
   id = CZR_artillery_emphasis
-  icon = GFX_goal_generic_army_artillery
+  icon = GFX_goal_generic_military_equipment
   x = -1
   y = 1
   cost = 5
@@ -2444,7 +2679,7 @@ focus = {
 }
 focus = {
   id = CZR_defensive_firepower
-  icon = GFX_goal_generic_defence
+  icon = GFX_goal_generic_military_sphere
   x = 1
   y = 1
   cost = 5
@@ -2456,7 +2691,7 @@ focus = {
 }
 focus = {
   id = CZR_combat_engineers
-  icon = GFX_goal_generic_construct_mil
+  icon = GFX_goal_generic_construction2
   x = 0
   y = 1
   cost = 5
@@ -2468,7 +2703,7 @@ focus = {
 }
 focus = {
   id = CZR_heavy_barrage
-  icon = GFX_goal_generic_army_attack
+  icon = GFX_goal_artillery
   x = 0
   y = 1
   cost = 5
@@ -2480,7 +2715,7 @@ focus = {
 }
 focus = {
   id = CZR_area_bombardment
-  icon = GFX_goal_generic_air_bombing
+  icon = GFX_goal_punishing_barrage
   x = 0
   y = 1
   cost = 5
@@ -2494,7 +2729,7 @@ focus = {
 }
 focus = {
   id = CZR_supreme_firepower
-  icon = GFX_goal_generic_tank_production
+  icon = GFX_goal_generic_lau_military
   x = 0
   y = 1
   cost = 5
@@ -2508,7 +2743,7 @@ focus = {
 }
 focus = {
   id = CZR_iron_thunder
-  icon = GFX_goal_generic_battle_plan
+  icon = GFX_focus_generic_strike_at_democracy1
   x = 0
   y = 4
   cost = 5
@@ -2519,7 +2754,7 @@ focus = {
   relative_position_id = CZR_firepower_focus
 
   completion_reward = {
-    
+
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2528,7 +2763,7 @@ focus = {
 # General Focuses
 focus = {
   id = CZR_desert_experience
-  icon = GFX_goal_generic_desert_warfare
+  icon = GFX_desert_gen
   x = 0
   y = 2
   cost = 5
@@ -2540,7 +2775,7 @@ focus = {
 }
 focus = {
   id = CZR_train_the_officer
-  icon = GFX_goal_generic_military_academy
+  icon = GFX_goal_MAF_African_Pilots
   x = -1
   y = 1
   cost = 5
@@ -2553,7 +2788,7 @@ focus = {
 }
 focus = {
   id = CZR_reorganized_army
-  icon = GFX_goal_generic_army_doctrine
+  icon = GFX_goal_generic_drafted_army
   x = 0
   y = 1
   cost = 5
@@ -2568,7 +2803,7 @@ focus = {
 
 focus = {
   id = CZR_expand_conscription
-  icon = GFX_goal_generic_mobilize_army
+  icon = GFX_zebra_soldier
   x = 1
   y = 1
   cost = 5
@@ -2581,7 +2816,7 @@ focus = {
 }
 focus = {
   id = CZR_defense_of_the_heartland
-  icon = GFX_goal_generic_defence
+  icon = GFX_goal_generic_fortify_city
   x = 0
   y = 1
   cost = 5
@@ -2595,7 +2830,7 @@ focus = {
 }
 focus = {
   id = CZR_desert_guardians
-  icon = GFX_goal_generic_special_forces
+  icon = GFX_goal_zebra_desert_general
   x = 0
   y = 3
   cost = 5
@@ -2618,9 +2853,6 @@ focus = {
   x = 6
   y = 1
   cost = 5
-  available = {
-    has_country_flag = CZR_choosen_traditional_methods
-  }
   prerequisite = { focus = CZR_lessons_of_the_past } 
   relative_position_id = CZR_lessons_of_the_past
   mutually_exclusive = { focus = CZR_modern_methods_of_warfare}
@@ -2629,7 +2861,7 @@ focus = {
 # Grandplan
 focus = {
   id = CZR_strategic_planning_focus
-  icon = GFX_goal_generic_defence
+  icon = GFX_focus_generic_provoke_border_clashes
   x = -2
   y = 1
   cost = 10
@@ -2659,7 +2891,7 @@ focus = {
 
 focus = {
   id = CZR_ambush_tactics
-  icon = GFX_goal_generic_fortify
+  icon = GFX_goal_generic_support_equipment
   x = 0
   y = 1
   cost = 10
@@ -2678,7 +2910,7 @@ focus = {
 
 focus = {
   id = CZR_night_assault
-  icon = GFX_goal_generic_attack_night
+  icon = GFX_goal_generic_more_territorial_claims
   x = 0
   y = 1
   cost = 10
@@ -2691,7 +2923,7 @@ focus = {
 
 focus = {
   id = CZR_prepared_offensive
-  icon = GFX_goal_generic_planning
+  icon = GFX_goal_unicorn_soldier
   x = 1
   y = 1
   cost = 10
@@ -2717,7 +2949,7 @@ focus = {
 
 focus = {
   id = CZR_war_of_positions
-  icon = GFX_goal_generic_tank_defense
+  icon = GFX_goal_nested_fortifications
   x = 0
   y = 1
   cost = 10
@@ -2730,7 +2962,7 @@ focus = {
 }
 focus = {
   id = CZR_the_final_plan
-  icon = GFX_goal_generic_major_war
+  icon = GFX_goal_generic_position_armies
   x = 0
   y = 4
   cost = 10
@@ -2744,14 +2976,13 @@ focus = {
     add_ideas = CZR_final_grand_strategy_bonus
     add_war_support = 0.1
     add_stability = 0.05
-    add_research_slot = 1
   }
 }
 
 # Massive assault
 focus = {
 id = CZR_mass_assault_focus
-icon = GFX_goal_generic_army_doctrines
+icon = GFX_goal_military_academy
 x = 2
 y = 1
 cost = 10
@@ -2774,7 +3005,7 @@ completion_reward = {
 
 focus = {
   id = CZR_zebra_wave_tactics
-  icon = GFX_goal_generic_military_sphere
+  icon = GFX_goal_zebra_desert_army
   x = 1
   y = 1
   cost = 10
@@ -2790,7 +3021,7 @@ focus = {
 
 focus = {
 id = CZR_total_mobilization
-icon = GFX_goal_generic_production2
+icon = GFX_goal_generic_allies_build_infantry
 x = 0
 y = 1
 cost = 10
@@ -2818,7 +3049,7 @@ focus = {
 
 focus = {
 id = CZR_logistical_simplicity
-icon = GFX_goal_generic_supply
+icon = GFX_goal_radio
 x = -1
 y = 1
 cost = 10
@@ -2834,7 +3065,7 @@ completion_reward = {
 
 focus = {
 id = CZR_disposable_warfare
-icon = GFX_goal_generic_build_infantry
+icon = GFX_goal_generic_small_arms
 x = 0
 y = 1
 cost = 10
@@ -2849,8 +3080,8 @@ completion_reward = {
 }
 
 focus = {
-id = CZR_red_flood
-icon = GFX_goal_generic_occupy_states
+id = CZR_healthcare
+icon = GFX_focus_healthcare_program
 x = 0
 y = 1
 cost = 10
@@ -2865,13 +3096,13 @@ completion_reward = {
 
 focus = {
 id = CZR_rise_of_the_war_machine
-icon = GFX_goal_generic_battle_plan
+icon = GFX_focus_generic_army_doctrines_2
 x = 0
 y = 4
 cost = 10
 prerequisite = {
   focus = CZR_meatgrinder
-  focus = CZR_red_flood
+  focus = CZR_healthcare
 }
 relative_position_id = CZR_mass_assault_focus
 completion_reward = {
@@ -2879,13 +3110,12 @@ completion_reward = {
   add_ideas = CZR_mass_assault_final_bonus
   add_war_support = 0.1
   add_stability = 0.05
-  add_research_slot = 1
 }
 }
 # Final focus in army focus tree
 focus = {
   id = CZR_great_army_of_desert
-  icon = GFX_goal_generic_army_doctrine
+  icon = GFX_goal_DOM_The_Phoenix
   x = 0
   y = 2
   cost = 5
@@ -2901,36 +3131,7 @@ focus = {
   relative_position_id = CZR_desert_guardians
 
   completion_reward = {
-    hidden_effect = {
-      if = {
-        limit = {
-          has_completed_focus = CZR_spearhead
-        }
-        custom_effect_tooltip = CZR_final_bonus_maneuver
-        add_ideas = CZR_bonus_maneuver
-      }
-      if = {
-        limit = {
-          has_completed_focus = CZR_iron_thunder
-        }
-        custom_effect_tooltip = CZR_final_bonus_firepower
-        add_ideas = CZR_bonus_firepower
-      }
-      if = {
-        limit = {
-          has_completed_focus = CZR_the_final_plan
-        }
-        custom_effect_tooltip = CZR_the_final_plan
-        add_ideas = CZR_bonus_plan
-      }
-      if = {
-        limit = {
-          has_completed_focus = CZR_rise_of_the_war_machine
-        }
-        custom_effect_tooltip = CZR_final_bonus_assault
-        add_ideas = CZR_bonus_assault
-      }
-    }
+    
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
