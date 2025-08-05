@@ -363,4 +363,143 @@ spriteTypes = {
         name = "GFX_CZR_word_in_the_dunes"
         texturefile = "gfx/interface/goals/CZR_word_in_the_dunes.dds"
     }
+    spriteType = {
+        name = "GFX_CZR_accepted_as_one"
+        texturefile = "gfx/interface/goals/CZR_accepted_as_one.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_challenge_the_old_throne"
+        texturefile = "gfx/interface/goals/CZR_challenge_the_old_throne.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_collaborate_with_magicians"
+        texturefile = "gfx/interface/goals/CZR_collaborate_with_magicians.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_control_the_lake_core"
+        texturefile = "gfx/interface/goals/CZR_control_the_lake_core.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_crown_over_empire"
+        texturefile = "gfx/interface/goals/CZR_crown_over_empire.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_crown_without_throne"
+        texturefile = "gfx/interface/goals/CZR_crown_without_throne.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_cut_the_ugabi_knot"
+        texturefile = "gfx/interface/goals/CZR_cut_the_ugabi_knot.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_dreams_of_the_sea"
+        texturefile = "gfx/interface/goals/CZR_dreams_of_the_sea.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_end_of_pretenders"
+        texturefile = "gfx/interface/goals/CZR_end_of_pretenders.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_end_the_legacy_of_the_empire"
+        texturefile = "gfx/interface/goals/CZR_end_the_legacy_of_the_empire.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_extinguish_the_fire"
+        texturefile = "gfx/interface/goals/CZR_extinguish_the_fire.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_faith_in_tomorrow"
+        texturefile = "gfx/interface/goals/CZR_faith_in_tomorrow.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_fertile_heart_of_the_kingdom"
+        texturefile = "gfx/interface/goals/CZR_fertile_heart_of_the_kingdom.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_get_rid_of_the_false_prophet"
+        texturefile = "gfx/interface/goals/CZR_get_rid_of_the_false_prophet.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_go_to_zanzibaka_bay"
+        texturefile = "gfx/interface/goals/CZR_go_to_zanzibaka_bay.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_integrate_the_north"
+        texturefile = "gfx/interface/goals/CZR_integrate_the_north.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_legacy_of_the_underdogs"
+        texturefile = "gfx/interface/goals/CZR_legacy_of_the_underdogs.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_order_after_the_storm"
+        texturefile = "gfx/interface/goals/CZR_order_after_the_storm.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_proclaim_the_great_kingdom"
+        texturefile = "gfx/interface/goals/CZR_proclaim_the_great_kingdom.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_reach_the_arabian_sea"
+        texturefile = "gfx/interface/goals/CZR_reach_the_arabian_sea.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_restore_royal_power"
+        texturefile = "gfx/interface/goals/CZR_restore_royal_power.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_strength_is_not_rule"
+        texturefile = "gfx/interface/goals/CZR_strength_is_not_rule.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_take_back_the_city_of_scientists"
+        texturefile = "gfx/interface/goals/CZR_take_back_the_city_of_scientists.dds"
+    }
+
+    spriteType = {
+        name = "GFX_CZR_end_the_old_dynasty"
+        texturefile = "gfx/interface/goals/CZR_end_the_old_dynasty.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_tribes_call_for_order"
+        texturefile = "gfx/interface/goals/CZR_tribes_call_for_order.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_not_one_of_them"
+        texturefile = "gfx/interface/goals/CZR_not_one_of_them.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_timbaktu_university"
+        texturefile = "gfx/interface/goals/CZR_timbaktu_university.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_namu_zaalrah_help"
+        texturefile = "gfx/interface/goals/CZR_namu_zaalrah_help.dds"
+    }
+    spriteType = {
+        name = "GFX_CZR_deal_with_order"
+        texturefile = "gfx/interface/goals/CZR_deal_with_order.dds"
+    }
 }

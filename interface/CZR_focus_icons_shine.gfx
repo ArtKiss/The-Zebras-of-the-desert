@@ -1373,4 +1373,460 @@ spriteTypes = {
             animationrotationoffset = { x = 0.0 y = 0.0 }
         }
     }
+    spriteType = {
+        name = "GFX_CZR_accepted_as_one"
+        texturefile = "gfx/interface/goals/CZR_accepted_as_one.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_accepted_as_one.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_challenge_the_old_throne"
+        texturefile = "gfx/interface/goals/CZR_challenge_the_old_throne.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_challenge_the_old_throne.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_collaborate_with_magicians"
+        texturefile = "gfx/interface/goals/CZR_collaborate_with_magicians.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_collaborate_with_magicians.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_control_the_lake_core"
+        texturefile = "gfx/interface/goals/CZR_control_the_lake_core.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_control_the_lake_core.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_crown_over_empire"
+        texturefile = "gfx/interface/goals/CZR_crown_over_empire.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_crown_over_empire.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_crown_without_throne"
+        texturefile = "gfx/interface/goals/CZR_crown_without_throne.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_crown_without_throne.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_CZR_cut_the_ugabi_knot"
+        texturefile = "gfx/interface/goals/CZR_cut_the_ugabi_knot.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_cut_the_ugabi_knot.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_dreams_of_the_sea"
+        texturefile = "gfx/interface/goals/CZR_dreams_of_the_sea.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_dream_of_the_sea.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_end_of_pretenders"
+        texturefile = "gfx/interface/goals/CZR_end_of_pretenders.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_end_of_pretenders.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_end_the_legacy_of_the_empires"
+        texturefile = "gfx/interface/goals/CZR_end_the_legacy_of_the_empires.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_end_the_legacy_of_the_empires.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_extinguish_the_fire"
+        texturefile = "gfx/interface/goals/CZR_extinguish_the_fire.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_extinguish_the_fire.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_faith_in_tomorrow"
+        texturefile = "gfx/interface/goals/CZR_faith_in_tomorrow.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_faith_in_tomorrow.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_fertile_heart_of_the_kingdom"
+        texturefile = "gfx/interface/goals/CZR_fertile_heart_of_the_kingdom.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_fertile_heart_of_the_kingdom.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_get_rid_of_the_false_prophet"
+        texturefile = "gfx/interface/goals/CZR_get_rid_of_the_false_prophet.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_get_rid_of_the_false_prophet.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_go_to_zanzibar_bay"
+        texturefile = "gfx/interface/goals/CZR_go_to_zanzibar_bay.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_go_to_zanzibar_bay.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_CZR_integrate_the_north"
+        texturefile = "gfx/interface/goals/CZR_integrate_the_north.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_integrate_the_north.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_legacy_of_the_underdogs"
+        texturefile = "gfx/interface/goals/CZR_legacy_of_the_underdogs.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_legacy_of_the_underdogs.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_order_after_the_storm"
+        texturefile = "gfx/interface/goals/CZR_order_after_the_storm.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_order_after_the_storm.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_proclaim_the_great_kingdom"
+        texturefile = "gfx/interface/goals/CZR_proclaim_the_great_kingdom.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_proclaim_the_great_kingdom.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_reach_the_arabian_sea"
+        texturefile = "gfx/interface/goals/CZR_reach_the_arabian_sea.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_reach_the_arabian_sea.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_restore_royal_power"
+        texturefile = "gfx/interface/goals/CZR_restore_royal_power.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_restore_royal_power.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_strength_is_not_rule"
+        texturefile = "gfx/interface/goals/CZR_strength_is_not_rule.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_strength_is_not_rule.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_take_back_the_city_of_scientists"
+        texturefile = "gfx/interface/goals/CZR_take_back_the_city_of_scientists.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_take_back_the_city_of_scientists.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_CZR_take_the_right_to_the_throne"
+        texturefile = "gfx/interface/goals/CZR_take_the_right_to_the_throne.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_take_the_right_to_the_throne.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_CZR_tribes_call_for_order"
+        texturefile = "gfx/interface/goals/CZR_tribes_call_for_order.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_tribes_call_for_order.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_CZR_not_one_of_them"
+        texturefile = "gfx/interface/goals/CZR_not_one_of_them.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_not_one_of_them.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_CZR_timbaktu_university"
+        texturefile = "gfx/interface/goals/CZR_timbaktu_university.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_timbaktu_university.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_CZR_namu_zaalrah_help"
+        texturefile = "gfx/interface/goals/CZR_namu_zaalrah_help.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_namu_zaalrah_help.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
+    spriteType = {
+        name = "GFX_CZR_deal_with_order"
+        texturefile = "gfx/interface/goals/CZR_deal_with_order.dds"
+        effectFile = "gfx/FX/buttonstate.lua"
+        animation = {
+            animationmaskfile = "gfx/interface/goals/CZR_deal_with_order.dds"
+            animationtexturefile = "gfx/interface/goals/goal_shine_overlay.dds"
+            animationrotation = -90.0
+            animationlooping = true
+            animationtime = 1.5
+            animationblendmode = "add"
+            animationtype = "scrolling"
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+        }
+    }
 }

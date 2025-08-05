@@ -54,13 +54,12 @@ ideas = {
             modifier = {
                 political_power_gain = -0.3
                 surrender_limit = -0.2
-                compliance_growth = 0.1
             }
         }
 
         # Начальные идеи
         CZR_fear_of_the_yeti = {
-            picture = GFX_idea_legacy_of_the_storm
+            icon = GFX_idea_legacy_of_the_storm
             allowed = { always = yes }
             removal_cost = -1
             modifier = {
@@ -72,18 +71,18 @@ ideas = {
         }
 
         CZR_econ_debuff = {
-            picture = GFX_idea_the_storms_power
+            icon = GFX_idea_the_storms_power
             allowed = { original_tag = CZR }
             removal_cost = -1
             modifier = {
-                compliance_growth_on_our_occupied_states = -0.05
+                compliance_growth_on_our_occupied_states = 0.05
                 production_speed_buildings_factor = -0.10    # заменяет construction_speed_factor
                 resistance_target = 0.05
             }
         }
 
         CZR_loyal_tribes = {
-            picture = GFX_CZR_loyalty_tribes
+            icon = GFX_CZR_loyalty_tribes
             allowed = { original_tag = CZR }
             removal_cost = -1
             modifier = {
@@ -99,7 +98,7 @@ ideas = {
             removal_cost = -1
         }
         CZR_yeti_council_spirit = {
-            picture = GFX_idea_generic_government
+            icon = GFX_idea_generic_government
             allowed = { original_tag = CZR }
             modifier = {
                 political_power_factor = 0.1
@@ -108,7 +107,7 @@ ideas = {
             removal_cost = -1
         }
         CZR_high_command = {
-            picture = GFX_CZR_headquarters
+            icon = GFX_CZR_headquarters
             allowed = { original_tag = CZR }
             modifier = {
                 planning_speed = 0.1
@@ -118,7 +117,7 @@ ideas = {
             removal_cost = -1
         }
         CZR_empty_shelves_idea = {
-            picture = GFX_idea_WAT_imported_factory
+            icon = GFX_idea_WAT_imported_factory
             allowed = { always = yes }
             removal_cost = -1
             modifier = {
@@ -127,10 +126,404 @@ ideas = {
             }
         }
         # Идеи армии
+        CZR_mobile_warfare_spirit_1 = {
+            allowed = { always = yes }
+            visible = { always = yes }
+            icon = GFX_CZR_mobile_spirit_1
+            modifier = {
+                army_speed_factor = 0.05
+            }
+        }
+        CZR_mobile_warfare_spirit_2 = {
+            icon = GFX_CZR_mobile_spirit_2
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                army_speed_factor = 0.1
+                org_loss_when_moving = -0.05
+                breakthrough_factor = 0.1
+            }
+        }
+        CZR_mobile_warfare_spirit_3 = {
+            icon = GFX_CZR_mobile_spirit_3
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            equipment_bonus = {
+                light_tank_chassis = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+            }
+            modifier = {
+                army_speed_factor = 0.1
+                org_loss_when_moving = -0.05
+                breakthrough_factor = 0.1
+            }
+        }
+        CZR_mobile_warfare_spirit_4 = {
+            icon = GFX_CZR_mobile_spirit_4
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            equipment_bonus = {
+                light_tank_chassis = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+            }
+            modifier = {
+                army_speed_factor = 0.1
+                org_loss_when_moving = -0.05
+                breakthrough_factor = 0.1
+                supply_consumption_factor = -0.1
+            }
+        }
+        CZR_mobile_warfare_spirit_5 = {
+            icon = GFX_CZR_mobile_spirit_5
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            equipment_bonus = {
+                light_tank_chassis = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+            }
+            modifier = {
+                army_speed_factor = 0.1
+                org_loss_when_moving = -0.10
+                breakthrough_factor = 0.1
+                supply_consumption_factor = -0.1
+                army_armor_attack_factor = 0.05
+                motorized_attack_factor = 0.05
+            }
+        }
+        CZR_mobile_warfare_spirit_6 = {
+            icon = GFX_CZR_mobile_spirit_6
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            equipment_bonus = {
+                light_tank_chassis = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+            }
+            modifier = {
+                army_speed_factor = 0.1
+                org_loss_when_moving = -0.10
+                breakthrough_factor = 0.1
+                supply_consumption_factor = -0.1
+                army_armor_attack_factor = 0.05
+                motorized_attack_factor = 0.05
+                mechanized_attack_factor = 0.05
+            }
+        }
+        CZR_mobile_warfare_spirit_7 = {
+            icon = GFX_CZR_mobile_spirit_7
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            equipment_bonus = {
+                light_tank_chassis = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+            }
+            modifier = {
+                army_speed_factor = 0.15
+                org_loss_when_moving = -0.10
+                breakthrough_factor = 0.15
+                supply_consumption_factor = -0.1
+                army_armor_attack_factor = 0.05
+                motorized_attack_factor = 0.05
+                mechanized_attack_factor = 0.05
+                army_org_factor = 0.1
+                experience_gain_army = 0.3
+            }
+        }
+        CZR_mobile_warfare_spirit_8 = {
+            icon = GFX_CZR_mobile_spirit_7
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            equipment_bonus = {
+                light_tank_chassis = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+            }
+            modifier = {
+                army_speed_factor = 0.2
+                org_loss_when_moving = -0.10
+                breakthrough_factor = 0.15
+                supply_consumption_factor = -0.1
+                army_armor_attack_factor = 0.1
+                motorized_attack_factor = 0.1
+                mechanized_attack_factor = 0.1
+                army_org_factor = 0.1
+                experience_gain_army = 0.3
+            }
+        }
+
+        CZR_firepower_spirit_1 = {
+            icon = GFX_CZR_firepower_spirit_1
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                army_artillery_attack_factor = 0.03
+                army_attack_factor = 0.03
+            }
+        }
+
+        CZR_firepower_spirit_2 = {
+            icon = GFX_CZR_firepower_spirit_2
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                army_artillery_attack_factor = 0.05
+                army_attack_factor = 0.05
+            }
+        }
+        CZR_firepower_spirit_3 = {
+            icon = GFX_CZR_firepower_spirit_3
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                army_artillery_attack_factor = 0.05
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                max_dig_in = 0.5                
+            }
+        }
+        CZR_firepower_spirit_4 = {
+            icon = GFX_CZR_firepower_spirit_4
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                army_artillery_attack_factor = 0.05
+                army_artillery_defence_factor = 0.05
+                army_org_factor = 0.05
+                max_dig_in = 0.5
+                dig_in_speed_factor = 0.1
+            }
+        }
+        CZR_firepower_spirit_5 = {
+            icon = GFX_CZR_firepower_spirit_5
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            equipment_bonus = {
+                anti_air_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                anti_tank_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                artillery_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+            }
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                army_artillery_attack_factor = 0.05
+                army_artillery_defence_factor = 0.05
+                army_org_factor = 0.05
+                max_dig_in = 0.5
+                dig_in_speed_factor = 0.1
+            }
+        }
+        CZR_firepower_spirit_6 = {
+            icon = GFX_CZR_firepower_spirit_6
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            equipment_bonus = {
+                anti_air_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                anti_tank_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                artillery_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+            }
+
+            modifier = {
+                army_attack_factor = 0.1
+                army_defence_factor = 0.1
+                army_artillery_attack_factor = 0.1
+                army_artillery_defence_factor = 0.1
+                army_org_factor = 0.05
+                max_dig_in = 0.5
+                dig_in_speed_factor = 0.1
+                fortification_damage = 0.2
+            }
+        }
+        CZR_firepower_spirit_7 = {
+            icon = GFX_CZR_firepower_spirit_7
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            equipment_bonus = {
+                anti_air_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                anti_tank_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                artillery_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+            }
+
+            modifier = {
+                army_attack_factor = 0.1
+                army_defence_factor = 0.1
+                army_artillery_attack_factor = 0.1
+                army_artillery_defence_factor = 0.1
+                army_org_factor = 0.05
+                max_dig_in = 0.5
+                dig_in_speed_factor = 0.1
+                conscription = 0.005
+                experience_gain_army = 0.3
+                fortification_damage = 0.2
+            }
+        }
+        CZR_firepower_spirit_8 = {
+            icon = GFX_CZR_firepower_spirit_8
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            equipment_bonus = {
+                anti_air_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                anti_tank_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                artillery_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+            }
+
+            modifier = {
+                army_attack_factor = 0.15
+                army_defence_factor = 0.1
+                army_artillery_attack_factor = 0.15
+                army_artillery_defence_factor = 0.1
+                army_org_factor = 0.1
+                max_dig_in = 0.5
+                dig_in_speed_factor = 0.1
+                conscription = 0.005
+                experience_gain_army = 0.3
+                fortification_damage = 0.2
+            }
+        }
+
+        CZR_desert_training_spirit_1 = {
+            icon = GFX_idea_desert_training
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                terrain_penalty_reduction = 0.1
+                acclimatization_hot_climate_gain_factor = 0.2
+                supply_consumption_factor = -0.1
+                supply_combat_penalties_on_core_factor = -0.2
+            }
+        }
+
+        CZR_desert_training_spirit_2 = {
+            icon = GFX_idea_desert_training
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                terrain_penalty_reduction = 0.1
+                acclimatization_hot_climate_gain_factor = 0.2
+                supply_consumption_factor = -0.1
+                supply_combat_penalties_on_core_factor = -0.2
+                conscription = 0.005
+                army_org_factor = 0.1
+            }
+        }
+
+        CZR_desert_training_spirit_3 = {
+            icon = GFX_idea_desert_training
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                terrain_penalty_reduction = 0.1
+                acclimatization_hot_climate_gain_factor = 0.2
+                supply_consumption_factor = -0.1
+                supply_combat_penalties_on_core_factor = -0.2
+                conscription = 0.005
+                army_org_factor = 0.1
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+            }
+        }
+
+        CZR_desert_training_spirit_4 = {
+            icon = GFX_idea_desert_training
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                terrain_penalty_reduction = 0.1
+                acclimatization_hot_climate_gain_factor = 0.2
+                supply_consumption_factor = -0.1
+                supply_combat_penalties_on_core_factor = -0.2
+                conscription = 0.005
+                army_org_factor = 0.1
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+                special_forces_attack_factor = 0.1
+                special_forces_defence_factor = 0.1
+                special_forces_no_supply_grace = 12
+                special_forces_out_of_supply_factor = -0.15
+                special_forces_min = 20
+            }
+        }
+
+        CZR_officer_school = {
+            icon = GFX_idea_military_academy
+            allowed = { always = yes }
+            visible = { always = yes }
+
+            modifier = {
+                land_doctrine_cost_factor = -0.1
+                planning_speed = 0.1
+            }
+        }
 
         # Идеи королевства
         CZR_army_reorganization = {
-            picture = GFX_idea_army_effort
+            icon = GFX_idea_army_effort
             allowed = { always = yes }
             visible = { always = yes }
 
@@ -231,7 +624,7 @@ ideas = {
             }
         }
         CZR_great_caravan_spirit = {
-            picture = GFX_idea_trade
+            icon = GFX_idea_trade
             allowed = { always = yes }
             modifier = {
                 monthly_population = 0.15
@@ -241,7 +634,7 @@ ideas = {
                 
         }
         CZR_survival_supplies = {
-            picture = GFX_idea_supply
+            icon = GFX_idea_supply
             allowed = { always = yes }
             modifier = {
                 supply_consumption_factor = -0.05

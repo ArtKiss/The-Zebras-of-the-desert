@@ -23,7 +23,6 @@ country_event = {
   id = CZR_start.2
   title = CZR_start.2.t
   desc = CZR_start.2.d
-  picture = GFX_report_event_generic
 
   is_triggered_only = yes
 
@@ -38,7 +37,6 @@ country_event = {
   id = CZR_start.3
   title = CZR_start.3.t
   desc = CZR_start.3.d
-  picture = GFX_CZR_start_desert_meeting
 
   is_triggered_only = yes
 
@@ -68,7 +66,6 @@ country_event = {
   id = CZR_start.4
   title = CZR_start.4.t
   desc = CZR_start.4.d
-  picture = GFX_report_event_generic_meeting
   is_triggered_only = yes
 
   option = {
@@ -92,7 +89,6 @@ country_event = {
   id = CZR_start.5
   title = CZR_start.5.t
   desc = CZR_start.5.d
-  picture = GFX_report_event_generic_protest
   is_triggered_only = yes
 
   option = {
@@ -106,7 +102,6 @@ country_event = {
   id = CZR_start.6
   title = CZR_start.6.t
   desc = CZR_start.6.d
-  picture = GFX_report_event_council
   is_triggered_only = yes
 
   option = {
@@ -133,7 +128,6 @@ country_event = {
   id = CZR_start.7
   title = CZR_start.7.t
   desc = CZR_start.7.d
-  picture = GFX_report_event_economic_crisis
   is_triggered_only = yes
 
   option = {
@@ -153,7 +147,6 @@ country_event = {
   id = CZR_start.8
   title = CZR_start.8.t
   desc = CZR_start.8.d
-  picture = GFX_report_event_generic_political
   is_triggered_only = yes
 
   option = {
@@ -173,7 +166,6 @@ country_event = {
   id = CZR_start.9
   title = CZR_start.9.t
   desc = CZR_start.9.d
-  picture = GFX_report_event_mysterious
   is_triggered_only = yes
   hidden = no
 
@@ -205,7 +197,6 @@ country_event = {
   id = CZR_start.11
   title = CZR_start.11.t
   desc = CZR_start.11.d
-  picture = GFX_report_event_imperial_court
   is_triggered_only = yes
 
   option = {
@@ -223,7 +214,6 @@ country_event = {
   id = CZR_start.12
   title = CZR_start.12.t
   desc = CZR_start.102.d
-  picture = GFX_report_event_military_gathering
   is_triggered_only = yes
 
   option = {
@@ -282,7 +272,6 @@ country_event = {
   id = CZR_kingdom.20
   title = CZR_kingdom.20.t
   desc = CZR_kingdom.20.d
-  picture = GFX_report_event_political
   is_triggered_only = yes
 
   option = {
@@ -295,7 +284,6 @@ country_event = {
   id = CZR_kingdom.21
   title = CZR_kingdom.21.t
   desc = CZR_kingdom.21.d
-  picture = GFX_event
   is_triggered_only = yes
   option = {
      name = CZR_kingdom.21.a
@@ -308,7 +296,6 @@ country_event = {
   id = CZR_kingdom.22
   title = CZR_kingdom.22.t
   desc = CZR_kingdom.22.d
-  picture = GFX_report_event_political_speech
   is_triggered_only = yes
 
   option = {
@@ -318,6 +305,20 @@ country_event = {
     add_political_power = 50
   }
 }
+
+country_event = {
+  id = CZR_kingdom.23
+  title = CZR_kingdom.23.t
+  desc = CZR_kingdom.23.d
+  is_triggered_only = yes
+
+  option = {
+    name = CZR_kingdom.23.a
+    add_stability = 0.05
+    add_political_power = 50
+  }
+}
+
 
 country_event = {
     id = CZR_event.311
@@ -342,7 +343,6 @@ country_event = {
     id = CZR_event.312
     title = CZR_event.312.t
     desc = CZR_event.312.d
-    picture = GFX_report_event_generic_industry
     is_triggered_only = yes
     option = {
         name = CZR_event.312.a
@@ -357,7 +357,6 @@ country_event = {
     id = CZR_event.313
     title = CZR_event.313.t
     desc = CZR_event.313.d
-    picture = GFX_report_event_generic_resources
     is_triggered_only = yes
     option = {
         name = CZR_event.313.a
@@ -376,7 +375,6 @@ country_event = {
     id = CZR_event.314
     title = CZR_event.314.t
     desc = CZR_event.314.d
-    picture = GFX_report_event_generic_workers
     is_triggered_only = yes
     option = {
         name = CZR_event.314.a
@@ -391,7 +389,6 @@ country_event = {
   immediate = { log = "[GetDateText]: [Root.GetName]: event CZR_event.350" }
   title = CZR_event.350.t
   desc = CZR_event.350.d
-  picture = GFX_report_event_education
   is_triggered_only = yes
 
   option = {
@@ -409,7 +406,6 @@ country_event = {
   immediate = { log = "[GetDateText]: [Root.GetName]: event CZR_event.351" }
   title = CZR_event.351.t
   desc = CZR_event.351.d
-  picture = GFX_report_event_education
   is_triggered_only = yes
 
   option = {
@@ -424,7 +420,6 @@ country_event = {
   immediate = { log = "[GetDateText]: [Root.GetName]: event CZR_event.351" }
   title = CZR_event.352.t
   desc = CZR_event.352.d
-  picture = GFX_report_event_education
   is_triggered_only = yes
 
   option = {
@@ -439,7 +434,6 @@ country_event = {
   immediate = { log = "[GetDateText]: [Root.GetName]: event CZR_event.351" }
   title = CZR_event.353.t
   desc = CZR_event.353.d
-  picture = GFX_report_event_education
   is_triggered_only = yes
 
   option = {
@@ -454,8 +448,6 @@ country_event = {
   is_triggered_only = yes
   title = CZR_event.101.t
   desc = CZR_event.101.d
-  picture = GFX_report_event_generic
-
   immediate = {
     swap_ideas = {
       remove_idea = CZR_tribal_army_structure
@@ -473,7 +465,6 @@ country_event = {
   is_triggered_only = yes
   title = CZR_event.102.t
   desc = CZR_event.102.d
-  picture = GFX_report_event_generic
 
   trigger = { always = yes }
 
@@ -500,7 +491,6 @@ country_event = {
   is_triggered_only = yes
   title = CZR_event.103.t
   desc = CZR_event.103.d
-  picture = GFX_report_event_generic
 
   trigger = {
     has_idea = CZR_caravan_days_idea

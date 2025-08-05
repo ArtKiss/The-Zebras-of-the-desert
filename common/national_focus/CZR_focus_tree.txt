@@ -116,7 +116,7 @@ focus = {
     add_ideas = CZR_legion_core_spirit
     add_equipment_to_stockpile = {
       type = infantry_equipment
-      amount = 1500
+      amount = 500
     }
     add_manpower = 7500
     add_war_support = 0.05
@@ -353,7 +353,8 @@ focus = {
   prerequisite = { focus = CZR_army_problems }
   relative_position_id = CZR_consult_the_elders
   completion_reward = {
-    
+    remove_ideas = CZR_econ_debuff 
+    country_event = { id = CZR_kingdom.23 } 
   }
 }
 
@@ -367,7 +368,7 @@ focus = {
   prerequisite = { focus = CZR_speak_to_the_zebras }
   relative_position_id = CZR_consult_the_elders
   completion_reward = {
-    
+    remove_ideas = CZR_fragmented_governmance
   }
 }
 
@@ -441,6 +442,8 @@ focus = {
       traits = { }
     }
   }
+
+  remove_ideas = CZR_self_proclaimed_empire
 }
 
 }
@@ -460,7 +463,7 @@ focus = {
 
 focus = {
   id = CZR_first_royal_tour
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_first_royal_tour
   x = 0
   y = 1
   cost = 5
@@ -679,6 +682,10 @@ focus = {
   prerequisite = { focus = CZR_unity_in_diversity }
   prerequisite = { focus = CZR_the_old_and_the_new }
   relative_position_id = CZR_balance_of_sand
+
+  completion_reward = {
+    remove_ideas = CZR_scarred_nation
+  }
 }
 
 focus = {
@@ -708,7 +715,7 @@ focus = {
 
 focus = {
   id = CZR_take_back_the_city_of_scientists
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_take_back_the_city_of_scientists
   x = -5
   y = 1
   cost = 5
@@ -725,7 +732,7 @@ focus = {
 
 focus = {
   id = CZR_end_the_old_dynasty
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_end_the_old_dynasty
   x = -3
   y = 1
   cost = 5
@@ -742,7 +749,7 @@ focus = {
 
 focus = {
   id = CZR_integrate_the_north
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_integrate_the_north
   x = 1
   y = 1
   cost = 10
@@ -759,7 +766,7 @@ focus = {
 
 focus = {
   id = CZR_timbaktu_university
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_timbaktu_university
   x = 0
   y = 1
   cost = 8
@@ -803,7 +810,7 @@ focus = {
 
 focus = {
   id = CZR_get_rid_of_the_false_prophet
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_get_rid_of_the_false_prophet
   x = 1
   y = 1
   cost = 5
@@ -820,7 +827,7 @@ focus = {
 
 focus = {
   id = CZR_crown_without_throne
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_crown_without_throne
   x = -1
   y = 1
   cost = 5
@@ -837,7 +844,7 @@ focus = {
 
 focus = {
   id = CZR_end_of_pretenders
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_end_of_pretenders
   x = 1
   y = 1
   cost = 10
@@ -853,7 +860,7 @@ focus = {
 }
 focus = {
   id = CZR_namu_zaalrah_help
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_namu_zaalrah_help
   x = 0
   y = 1
   cost = 8
@@ -863,7 +870,7 @@ focus = {
 
 focus = {
   id = CZR_challenge_the_old_throne
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_challenge_the_old_throne
   x = 3
   y = 1
   cost = 5
@@ -880,7 +887,7 @@ focus = {
 
 focus = {
   id = CZR_extinguish_the_fire
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_extinguish_the_fire
   x = 5
   y = 1
   cost = 5
@@ -897,7 +904,7 @@ focus = {
 
 focus = {
   id = CZR_restore_royal_power
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_restore_royal_power
   x = 1
   y = 1
   prerequisite = { focus = CZR_challenge_the_old_throne }
@@ -914,7 +921,7 @@ focus = {
 
 focus = {
   id = CZR_deal_with_order
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_deal_with_order
   x = 0
   y = 1
   cost = 8
@@ -924,7 +931,7 @@ focus = {
 
 focus = {
   id = CZR_tribes_call_for_order
-  icon = GFX_CZR_dunes
+  icon = GFX_tribes_call_for_order
   x = 2
   y = 1
   prerequisite = { focus = CZR_timbaktu_university }
@@ -940,7 +947,7 @@ focus = {
 
 focus = {
   id = CZR_cut_the_ugabi_knot
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_cut_the_ugabi_knot
   x = -2
   y = 1
   prerequisite = { focus = CZR_timbaktu_university }
@@ -956,7 +963,7 @@ focus = {
 
 focus = {
   id = CZR_control_the_lake_core
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_control_the_lake_core
   x = 1
   y = 1
   prerequisite = { focus = CZR_tribes_call_for_order }
@@ -973,7 +980,7 @@ focus = {
 
 focus = {
   id = CZR_fertile_heart_of_the_kingdom
-  icon = GFX_CZR_dunes
+  icon = GFX_fertile_heart_of_the_kingdom
   x = 0
   y = 1
   cost = 10
@@ -983,7 +990,7 @@ focus = {
 
 focus = {
   id = CZR_strength_is_not_rule
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_strength_is_not_rule
   x = 2
   y = 1
   cost = 5
@@ -998,8 +1005,8 @@ focus = {
   }
 }
 focus = {
-  id = CZR_crown_over_fallen_empire
-  icon = GFX_CZR_dunes
+  id = CZR_crown_over_empire
+  icon = GFX_CZR_crown_over_empire
   x = -2
   y = 1
   cost = 5
@@ -1016,11 +1023,11 @@ focus = {
 
 focus = {
   id = CZR_end_the_legacy_of_empire
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_end_the_legacy_of_the_empire
   x = 1
   y = 1
   prerequisite = { focus = CZR_strength_is_not_rule }
-  prerequisite = { focus = CZR_crown_over_fallen_empire }
+  prerequisite = { focus = CZR_crown_over_empire }
   relative_position_id = CZR_strength_is_not_rule
   cost = 10
   completion_reward = {
@@ -1032,7 +1039,7 @@ focus = {
 }
 focus = {
   id = CZR_legacy_of_the_underdogs
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_legacy_of_the_underdogs
   x = 0
   y = 1
   prerequisite = { focus = CZR_end_the_legacy_of_empire }
@@ -1041,13 +1048,13 @@ focus = {
 
 focus = {
   id = CZR_proclaim_the_great_kingdom
-  icon = GFX_CZR_dunes
-  x = -3
-  y = 1
+  icon = GFX_CZR_proclaim_the_great_kingdom
+  x = 0
+  y = 4
   cost = 8
   prerequisite = { focus = CZR_legacy_of_the_underdogs }
   prerequisite = { focus = CZR_fertile_heart_of_the_kingdom }
-  relative_position_id = CZR_legacy_of_the_underdogs
+  relative_position_id = CZR_namu_zaalrah_help
   completion_reward = {
     add_political_power = 100
     add_stability = 0.05
@@ -1058,7 +1065,7 @@ focus = {
 
 focus = {
   id = CZR_dreams_of_the_sea
-  icon = GFX_CZR_dunes
+  icon = CZR_dreams_of_the_sea
   x = 0
   y = 1
   cost = 8
@@ -1070,7 +1077,7 @@ focus = {
 
 focus = {
   id = CZR_reach_the_arabian_sea
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_reach_the_arabian_sea
   x = -3
   y = 1
   cost = 5
@@ -1099,7 +1106,7 @@ focus = {
 
 focus = { 
   id = CZR_order_after_the_storm
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_order_after_the_storm
   x = 0
   y = 1
   cost = 10
@@ -1109,7 +1116,7 @@ focus = {
 
 focus = {
   id = CZR_collaborate_with_magicians
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_collaborate_with_magicians
   x = 1
   y = 1
   cost = 5
@@ -1119,7 +1126,7 @@ focus = {
 
 focus = {
   id = CZR_go_to_zanzibaka_bay
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_go_to_zanzibaka_bay
   x = 3
   y = 1
   cost = 5
@@ -1148,7 +1155,7 @@ focus = {
 
 focus = { 
   id = CZR_not_one_of_them
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_not_one_of_them
   x = 0
   y = 1
   cost = 10
@@ -1158,7 +1165,7 @@ focus = {
 
 focus = {
   id = CZR_accepted_as_one
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_accepted_as_one
   x = -1
   y = 1
   cost = 5
@@ -1168,7 +1175,7 @@ focus = {
 
 focus = {
   id = CZR_faith_in_tomorrow
-  icon = GFX_CZR_dunes
+  icon = GFX_CZR_faith_in_tomorrow
   x = 0
   y = 4
   cost = 5
@@ -1333,9 +1340,9 @@ cost = 5
 available = {
   has_country_flag = CZR_flag_emperor_path
 }
-# allow_branch = {
-#   has_country_flag = CZR_flag_emperor_path
-# }
+allow_branch = {
+  has_country_flag = CZR_flag_emperor_path
+}
 
 
 completion_reward = {
@@ -1659,9 +1666,9 @@ focus = {
   available = {
     has_country_flag = CZR_flag_zebra_path
   }
-  # allow_branch = {
-  #   has_country_flag = CZR_flag_zebra_path
-  # }
+  allow_branch = {
+    has_country_flag = CZR_flag_zebra_path
+  }
   x = 9
   y = 0
   cost = 5
@@ -2542,7 +2549,23 @@ focus = {
   cost = 5
   prerequisite = { focus = CZR_lessons_of_the_past } 
   relative_position_id = CZR_lessons_of_the_past
-  mutually_exclusive = { focus = CZR_traditional_approach}
+  mutually_exclusive = { focus = CZR_traditional_approach }
+  completion_reward = {
+    add_doctrine_cost_reduction = {
+			name = cat_mobile_warfare
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_mobile_warfare
+		}
+    add_doctrine_cost_reduction = {
+			name = cat_superior_firepower
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_superior_firepower
+		}
+  }
+
+  search_filters = { FOCUS_FILTER_ARMY }
 }
 # Mobile Warfare
 focus = {
@@ -2555,7 +2578,14 @@ focus = {
   relative_position_id = CZR_modern_methods_of_warfare
   mutually_exclusive = { focus = CZR_firepower_focus}
   completion_reward = {
+  add_doctrine_cost_reduction = {
+    name = cat_mobile_warfare
+    cost_reduction = 0.5
+    uses = 1
+    category = cat_mobile_warfare
   }
+  add_ideas = CZR_mobile_warfare_spirit_1
+}
 
   search_filters = { FOCUS_FILTER_ARMY }
 }
@@ -2568,7 +2598,19 @@ focus = {
   prerequisite = { focus = CZR_mobile_focus }
   relative_position_id = CZR_mobile_focus
   completion_reward = {
+    add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = motorized_equipment
+		}
   }
+
+  search_filters = { FOCUS_FILTER_ARMY }
 }
 focus = {
   id = CZR_mechanized_offense
@@ -2576,11 +2618,23 @@ focus = {
   x = 0
   y = 1
   cost = 5
+  available = { has_completed_focus = CZR_shock_army }
   prerequisite = { focus = CZR_mobile_logistics }
   relative_position_id = CZR_mobile_logistics
   completion_reward = {
-  
+    add_tech_bonus = {
+			name = mech_bonus
+			bonus = 1.0
+			uses = 1
+			category = cat_mechanized_equipment
+		}
+    swap_ideas = {
+      remove_idea = CZR_mobile_warfare_spirit_5
+      add_idea = CZR_mobile_warfare_spirit_6
+    }
   }
+
+  search_filters = { FOCUS_FILTER_ARMY }
 }
   focus = {
   id = CZR_light_tank_tactics
@@ -2588,10 +2642,26 @@ focus = {
   x = 0
   y = 1
   cost = 5
+  available = { has_completed_focus = CZR_breakthrough_theory }
   prerequisite = { focus = CZR_motorization }
   relative_position_id = CZR_motorization
   completion_reward = {
+    add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_light_armor
+			}
+    add_equipment_to_stockpile = {
+        type = light_tank_equipment
+        amount = 150
+    }
+    swap_ideas = {
+      remove_idea = CZR_mobile_warfare_spirit_2
+      add_idea = CZR_mobile_warfare_spirit_3
+    }
   }
+
+  search_filters = { FOCUS_FILTER_ARMY }
 }
 focus = {
   id = CZR_mobile_logistics
@@ -2599,12 +2669,18 @@ focus = {
   x = 0
   y = 1
   cost = 5
+  available = { has_completed_focus = CZR_light_tank_tactics }
   prerequisite = { focus = CZR_breakthrough_theory }
   relative_position_id = CZR_breakthrough_theory
   completion_reward = {
-    modifier = {
-      army_speed_factor = 0.05
-      supply_consumption_factor = -0.05
+    add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = motorized_equipment
+		}
+    swap_ideas = {
+      remove_idea = CZR_mobile_warfare_spirit_3
+      add_idea = CZR_mobile_warfare_spirit_4
     }
   }
 }
@@ -2617,7 +2693,10 @@ focus = {
   prerequisite = { focus = CZR_mobile_focus }
   relative_position_id = CZR_mobile_focus
   completion_reward = {
-    
+    swap_ideas = {
+      remove_idea = CZR_mobile_warfare_spirit_1
+      add_idea = CZR_mobile_warfare_spirit_2
+    }
   }
 }
 focus = {
@@ -2626,9 +2705,14 @@ focus = {
   x = 0
   y = 1
   cost = 5
+  available = { has_completed_focus = CZR_mobile_logistics }
   prerequisite = { focus = CZR_light_tank_tactics }
   relative_position_id = CZR_light_tank_tactics
   completion_reward = {
+    swap_ideas = {
+      remove_idea = CZR_mobile_warfare_spirit_4
+      add_idea = CZR_mobile_warfare_spirit_5
+    }
   }
 }
 focus = {
@@ -2638,13 +2722,24 @@ focus = {
   y = 4
   cost = 5
   prerequisite = { 
-    focus = CZR_shock_army 
     focus = CZR_mechanized_offense
+  }
+  prerequisite = { 
+    focus = CZR_shock_army 
   }
   relative_position_id = CZR_mobile_focus
 
   completion_reward = {
-
+    add_doctrine_cost_reduction = {
+			name = cat_mobile_warfare
+			cost_reduction = 0.5
+			uses = 1
+			category = cat_mobile_warfare
+		}
+    swap_ideas = {
+      remove_idea = CZR_mobile_warfare_spirit_6
+      add_idea = CZR_mobile_warfare_spirit_7
+    }
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2661,6 +2756,13 @@ focus = {
   relative_position_id = CZR_modern_methods_of_warfare
   mutually_exclusive = { focus = CZR_mobile_focus}
   completion_reward = {
+    add_doctrine_cost_reduction = {
+			name = cat_superior_firepower
+			cost_reduction = 0.5
+			uses = 1
+			category = cat_superior_firepower
+		}
+    add_ideas = CZR_firepower_spirit_1
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2674,8 +2776,21 @@ focus = {
   prerequisite = { focus = CZR_firepower_focus }
   relative_position_id = CZR_firepower_focus
   completion_reward = {
-    
-  }
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 1.0
+			uses = 1
+			category = artillery
+		}
+    add_equipment_to_stockpile = {
+      type = artillery_equipment
+      amount = 250
+    }
+    swap_ideas = {
+        remove_idea = CZR_firepower_spirit_1
+        add_idea = CZR_firepower_spirit_2
+      }
+    }
 }
 focus = {
   id = CZR_defensive_firepower
@@ -2686,7 +2801,16 @@ focus = {
   prerequisite = { focus = CZR_firepower_focus }
   relative_position_id = CZR_firepower_focus
   completion_reward = {
-  
+    add_tech_bonus = {
+        name = infantry_weapons_bonus
+        bonus = 1.0
+        uses = 2
+        category = infantry_weapons
+      }
+    swap_ideas = {
+      remove_idea = CZR_firepower_spirit_2
+      add_idea = CZR_firepower_spirit_3
+    }
   }
 }
 focus = {
@@ -2695,10 +2819,20 @@ focus = {
   x = 0
   y = 1
   cost = 5
+  available = { has_completed_focus = CZR_defensive_firepower }
   prerequisite = { focus = CZR_artillery_emphasis }
   relative_position_id = CZR_artillery_emphasis
   completion_reward = {
-    
+    add_tech_bonus = {
+        name = CZR_engineers_bonus
+        bonus = 0.5
+        uses = 2
+        category = support_tech
+    }
+    swap_ideas = {
+      remove_idea = CZR_firepower_spirit_3
+      add_idea = CZR_firepower_spirit_4
+    }
   }
 }
 focus = {
@@ -2707,10 +2841,26 @@ focus = {
   x = 0
   y = 1
   cost = 5
+  available = { has_completed_focus = CZR_combat_engineers }
   prerequisite = { focus = CZR_defensive_firepower }
   relative_position_id = CZR_defensive_firepower
   completion_reward = {
-    
+    add_equipment_to_stockpile = {
+      type = artillery_equipment
+      amount = 100
+    }
+    add_tech_bonus = {
+			name = generic_tech_bonus
+			bonus = 1.0
+			uses = 2
+			category = cat_anti_tank
+		}
+    add_tech_bonus = {
+			name = generic_tech_bonus
+			bonus = 1.0
+			uses = 2
+			category = cat_anti_air
+		}
   }
 }
 focus = {
@@ -2719,10 +2869,20 @@ focus = {
   x = 0
   y = 1
   cost = 5
+  available = { has_completed_focus = CZR_supreme_firepower }
   prerequisite = { focus = CZR_heavy_barrage }
   relative_position_id = CZR_heavy_barrage
   completion_reward = {
-    
+    add_tech_bonus = {
+			name = infantry_weapons_bonus
+			bonus = 1.0
+			uses = 1
+			category = artillery
+		}
+    swap_ideas = {
+      remove_idea = CZR_firepower_spirit_5
+      add_idea = CZR_firepower_spirit_6
+    }
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2733,10 +2893,21 @@ focus = {
   x = 0
   y = 1
   cost = 5
+
   prerequisite = { focus = CZR_combat_engineers }
   relative_position_id = CZR_combat_engineers
   completion_reward = {
-    
+    add_tech_bonus = {
+			name = artillery_bonus
+			bonus = 1.0
+			ahead_reduction = 1.0
+			uses = 1
+			category = artillery
+		}
+    swap_ideas = {
+      remove_idea = CZR_firepower_spirit_4
+      add_idea = CZR_firepower_spirit_5
+    }
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2748,13 +2919,24 @@ focus = {
   y = 4
   cost = 5
   prerequisite = { 
-    focus = CZR_supreme_firepower
     focus = CZR_area_bombardment 
+  }
+    prerequisite = { 
+    focus = CZR_supreme_firepower
   }
   relative_position_id = CZR_firepower_focus
 
   completion_reward = {
-
+    add_doctrine_cost_reduction = {
+			name = cat_superior_firepower
+			cost_reduction = 0.5
+			uses = 1
+			category = cat_superior_firepower
+		}
+    swap_ideas = {
+      remove_idea = CZR_firepower_spirit_6
+      add_idea = CZR_firepower_spirit_7
+    }
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2770,7 +2952,8 @@ focus = {
   prerequisite = { focus = CZR_lessons_of_the_past }
   relative_position_id = CZR_lessons_of_the_past
   completion_reward = {
-    
+    add_ideas = CZR_desert_training_spirit_1
+    army_experience = 10
   }
 }
 focus = {
@@ -2782,6 +2965,9 @@ focus = {
   prerequisite = { focus = CZR_desert_experience }
   relative_position_id = CZR_desert_experience
   completion_reward = {
+    add_ideas = CZR_officer_school
+    recruit_character = CZR_general_nehari
+    recruit_character = CZR_general_zalmon
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2795,7 +2981,16 @@ focus = {
   prerequisite = { focus = CZR_train_the_officer }
   relative_position_id = CZR_train_the_officer
   completion_reward = {
-  
+      add_tech_bonus = {
+        name = spirit_warriors_tech
+        bonus = 0.75
+        uses = 2
+        category = spirit_warriors_tech
+      }
+      swap_ideas = {
+      remove_idea = CZR_desert_training_spirit_1
+      add_idea = CZR_desert_training_spirit_2
+    }
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2810,6 +3005,8 @@ focus = {
   prerequisite = { focus = CZR_desert_experience }
   relative_position_id = CZR_desert_experience
   completion_reward = {
+    add_manpower = 25000
+    
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2823,7 +3020,10 @@ focus = {
   prerequisite = { focus = CZR_expand_conscription }
   relative_position_id = CZR_expand_conscription
   completion_reward = {
-  
+    swap_ideas = {
+      remove_idea = CZR_desert_training_spirit_2
+      add_idea = CZR_desert_training_spirit_3
+    }
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2840,7 +3040,10 @@ focus = {
   }
   relative_position_id = CZR_desert_experience
   completion_reward = {
-    
+    swap_ideas = {
+      remove_idea = CZR_desert_training_spirit_3
+      add_idea = CZR_desert_training_spirit_4
+    }
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
@@ -2856,6 +3059,20 @@ focus = {
   prerequisite = { focus = CZR_lessons_of_the_past } 
   relative_position_id = CZR_lessons_of_the_past
   mutually_exclusive = { focus = CZR_modern_methods_of_warfare}
+  completion_reward = {
+    add_doctrine_cost_reduction = {
+			name = cat_grand_battle_plan
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_grand_battle_plan
+		}
+    add_doctrine_cost_reduction = {
+			name = cat_mass_assault
+			cost_reduction = 0.5
+			uses = 2
+			category = cat_mass_assault
+		}
+  }
 }
 
 # Grandplan
@@ -2870,9 +3087,11 @@ focus = {
   relative_position_id = CZR_traditional_approach
   completion_reward = {
     add_doctrine_cost_reduction = {
-      land_doctrine = grand_battle_plan
-      reduction = 1
-    }
+			name = cat_grand_battle_plan
+			cost_reduction = 0.5
+			uses = 1
+			category = cat_grand_battle_plan
+		}
   }
 }
 
@@ -2968,6 +3187,8 @@ focus = {
   cost = 10
   prerequisite = {
     focus = CZR_war_of_positions
+  }
+    prerequisite = {
     focus = CZR_night_assault
   }
   relative_position_id = CZR_strategic_planning_focus
@@ -2990,16 +3211,12 @@ prerequisite = { focus = CZR_traditional_approach }
 mutually_exclusive = { focus = CZR_strategic_planning_focus}
 relative_position_id = CZR_traditional_approach
 completion_reward = {
-  add_tech_bonus = {
-      name = mass_assault
-      category = land_doctrine
-      bonus = 0.5
-      uses = 2
-    }
-  swap_ideas = {
-      remove_idea = CZR_reformed_army_structure
-      add_idea = CZR_reformed_mass_assault_1
-    }
+  add_doctrine_cost_reduction = {
+			name = cat_mass_assault
+			cost_reduction = 0.5
+			uses = 1
+			category = cat_mass_assault
+		}
 }
 }
 
@@ -3020,17 +3237,17 @@ focus = {
 }
 
 focus = {
-id = CZR_total_mobilization
-icon = GFX_goal_generic_allies_build_infantry
-x = 0
-y = 1
-cost = 10
-prerequisite = { focus = CZR_zebra_wave_tactics }
-relative_position_id = CZR_zebra_wave_tactics
-completion_reward = {
-  add_manpower = 50000
-  add_war_support = 0.05
-}
+  id = CZR_total_mobilization
+  icon = GFX_goal_generic_allies_build_infantry
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = CZR_zebra_wave_tactics }
+  relative_position_id = CZR_zebra_wave_tactics
+  completion_reward = {
+    add_manpower = 50000
+    add_war_support = 0.05
+  }
 }
 
 focus = {
@@ -3048,69 +3265,71 @@ focus = {
 }
 
 focus = {
-id = CZR_logistical_simplicity
-icon = GFX_goal_radio
-x = -1
-y = 1
-cost = 10
-prerequisite = { focus = CZR_mass_assault_focus }
-relative_position_id = CZR_mass_assault_focus
-completion_reward = {
-  swap_ideas = {
-      remove_idea = CZR_reformed_mass_assault_1
-      add_idea = CZR_reformed_mass_assault_2
-    }
-}
-}
-
-focus = {
-id = CZR_disposable_warfare
-icon = GFX_goal_generic_small_arms
-x = 0
-y = 1
-cost = 10
-prerequisite = { focus = CZR_logistical_simplicity }
-relative_position_id = CZR_logistical_simplicity
-completion_reward = {
-  add_equipment_to_stockpile = {
-    type = infantry_equipment
-    amount = 2500
+  id = CZR_logistical_simplicity
+  icon = GFX_goal_radio
+  x = -1
+  y = 1
+  cost = 10
+  prerequisite = { focus = CZR_mass_assault_focus }
+  relative_position_id = CZR_mass_assault_focus
+  completion_reward = {
+    swap_ideas = {
+        remove_idea = CZR_reformed_mass_assault_1
+        add_idea = CZR_reformed_mass_assault_2
+      }
   }
 }
+
+focus = {
+  id = CZR_disposable_warfare
+  icon = GFX_goal_generic_small_arms
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = CZR_logistical_simplicity }
+  relative_position_id = CZR_logistical_simplicity
+  completion_reward = {
+    add_equipment_to_stockpile = {
+      type = infantry_equipment
+      amount = 2500
+    }
+  }
 }
 
 focus = {
-id = CZR_healthcare
-icon = GFX_focus_healthcare_program
-x = 0
-y = 1
-cost = 10
-prerequisite = { focus = CZR_disposable_warfare }
-relative_position_id = CZR_disposable_warfare
-completion_reward = {
-  add_ideas = red_flood_bonus
-  add_stability = -0.05
-  add_war_support = 0.1
-}
+  id = CZR_healthcare
+  icon = GFX_focus_healthcare_program
+  x = 0
+  y = 1
+  cost = 10
+  prerequisite = { focus = CZR_disposable_warfare }
+  relative_position_id = CZR_disposable_warfare
+  completion_reward = {
+    add_ideas = red_flood_bonus
+    add_stability = -0.05
+    add_war_support = 0.1
+  }
 }
 
 focus = {
-id = CZR_rise_of_the_war_machine
-icon = GFX_focus_generic_army_doctrines_2
-x = 0
-y = 4
-cost = 10
-prerequisite = {
-  focus = CZR_meatgrinder
-  focus = CZR_healthcare
-}
-relative_position_id = CZR_mass_assault_focus
-completion_reward = {
-  army_experience = 25
-  add_ideas = CZR_mass_assault_final_bonus
-  add_war_support = 0.1
-  add_stability = 0.05
-}
+  id = CZR_rise_of_the_war_machine
+  icon = GFX_focus_generic_army_doctrines_2
+  x = 0
+  y = 4
+  cost = 10
+  prerequisite = {
+    focus = CZR_healthcare
+  }
+  prerequisite = {
+    focus = CZR_meatgrinder
+  }
+  relative_position_id = CZR_mass_assault_focus
+  completion_reward = {
+    army_experience = 25
+    add_ideas = CZR_mass_assault_final_bonus
+    add_war_support = 0.1
+    add_stability = 0.05
+  }
 }
 # Final focus in army focus tree
 focus = {
@@ -3131,7 +3350,11 @@ focus = {
   relative_position_id = CZR_desert_guardians
 
   completion_reward = {
-    
+    log = "[GetDateText]: [Root.GetName]: Focus CZR_great_army_of_desert"
+
+    custom_effect_tooltip = CZR_great_army_of_desert_tt
+
+
   }
 
   search_filters = { FOCUS_FILTER_ARMY }
